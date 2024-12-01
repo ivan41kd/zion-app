@@ -1,0 +1,273 @@
+.home {
+ padding-top: rem(49px);
+ display: flex;
+ flex-direction: column;
+ &__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+ }
+ &__user {
+  max-width: rem(350px);
+  width: 100%;
+  background: rgba(44, 44, 46, 1);
+  border-radius: rem(15px);
+  padding: rem(9.5px) rem(7px) rem(9.5px) rem(14px);
+  margin-bottom: rem(21px);
+ }
+ &__user-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(10px);
+ }
+ &__user-info {
+  display: flex;
+  column-gap: rem(15px);
+  align-items: center;
+ }
+ &__user-avatar {
+  width: rem(56px);
+  height: rem(56px);
+ }
+ &__user-info-values {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(2px);
+ }
+ &__user-info-name {
+  font-size: rem(13px);
+  line-height: rem(15.85px);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+ }
+ &__user-info-level {
+  font-size: rem(10px);
+  line-height: rem(12.19px);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+ }
+ &__user-info-profit {
+  font-size: rem(10px);
+  line-height: rem(12.19px);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+ }
+ &__user-data {
+  display: flex;
+  justify-content: space-between;
+ }
+ &__user-data-values {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(3px);
+ }
+ &__user-data-name {
+  font-size: rem(8px);
+  line-height: rem(9.75px);
+  color: rgba(161, 161, 161, 1);
+  font-weight: 400;
+ }
+ &__user-data-value {
+  font-size: rem(10px);
+  line-height: rem(12.19px);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+ }
+ &__tabs {
+  display: grid;
+  grid-template-columns: rem(52px) rem(72px) rem(45px) rem(62px);
+  justify-content: space-between;
+  max-width: rem(321px);
+  width: 100%;
+  margin-bottom: rem(21px);
+ }
+ &__tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: rem(8px);
+  text-align: center;
+ }
+ &__tab-icon {
+  width: rem(25px);
+  height: rem(25px);
+ }
+ &__tab-text {
+  font-size: rem(10px);
+  line-height: rem(12.19px);
+  color: rgba(76, 141, 106, 1);
+  font-weight: 700;
+ }
+ &__deposits {
+  width: 100%;
+  max-width: rem(350px);
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(8px);
+  margin-bottom: rem(21px);
+ }
+ &__deposit {
+  background: rgba(44, 44, 46, 1);
+  border-radius: rem(15px);
+  padding: rem(10px) rem(10.5px);
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(5px);
+ }
+ &__deposit-name {
+  font-size: rem(12px);
+  line-height: rem(14.63px);
+  color: rgba(133, 133, 135, 1);
+  font-weight: 400;
+ }
+ &__deposit-payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ &__deposit-way {
+  display: flex;
+  align-items: center;
+  column-gap: rem(5px);
+ }
+ &__deposit-value {
+  font-size: rem(18px);
+  line-height: rem(20.7px);
+ }
+ &__deposit-way-icon {
+  width: rem(26.25px);
+  height: rem(25px);
+ }
+ &__deposit-way-name {
+  font-size: rem(16px);
+  line-height: rem(19.5px);
+  color: white;
+  font-weight: 600;
+ }
+ &__deposit-value {
+  font-size: rem(18px);
+  line-height: rem(20.7px);
+  font-weight: 600;
+ }
+ &__more {
+  width: 100%;
+  max-width: rem(375px);
+  background: rgba(44, 44, 46, 1);
+  padding: rem(10px) rem(14px);
+  border-radius: rem(15px);
+  overflow: hidden;
+  margin-bottom: rem(21px);
+ }
+ &__more-slider {
+  width: rem(514px);
+ }
+ &__more-slider-wrapper {
+  display: flex;
+ }
+ &__more-title {
+  font-size: rem(12px);
+  line-height: rem(14.63px);
+  color: rgba(133, 133, 135, 1);
+  font-weight: 400;
+  margin-bottom: rem(6px);
+ }
+ &__more-slide-item {
+  display: flex !important;
+  background: rgba(76, 141, 106, 0.2);
+  border-radius: rem(10px);
+  padding: rem(8px) rem(10px);
+  max-width: rem(168px);
+ }
+ &__more-slide-info-title {
+  font-size: rem(10px);
+  line-height: rem(12.19px);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  margin-bottom: rem(3px);
+ }
+ &__more-slide-link {
+  display: block;
+  font-size: rem(9px);
+  line-height: rem(10.97px);
+  color: rgba(65, 143, 101, 1);
+  font-weight: 300;
+  text-decoration: none;
+ }
+ &__more-slide-logo {
+  width: rem(46px);
+  height: rem(33px);
+ }
+ &__history {
+  background: rgba(44, 44, 46, 1);
+  padding: rem(10px);
+  border-radius: rem(15px);
+  max-width: rem(350px);
+  width: 100%;
+ }
+ &__history-title {
+  font-weight: 400;
+  font-size: rem(12px);
+  line-height: rem(14.63px);
+  color: rgba(133, 133, 135, 1);
+  margin-bottom: rem(5px);
+ }
+ &__history-transactions {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(10px);
+ }
+ &__history-transaction {
+  display: flex;
+  justify-content: space-between;
+ }
+ &__history-transaction-amount {
+  font-size: rem(12px);
+  line-height: rem(14.63px);
+  font-weight: 600;
+  margin-bottom: rem(2px);
+  text-align: right;
+ }
+ &__history-transaction-status {
+  font-size: rem(8px);
+  line-height: rem(9.75px);
+  font-weight: 400;
+  text-align: right;
+ }
+ &__history-transaction-status.in-progress {
+  color: rgba(217, 217, 217, 1);
+ }
+ &__history-transaction-status.completed {
+  color: rgba(214, 193, 94, 1);
+ }
+ &__history-transaction-status.failed {
+  font-size: rem(7px);
+  line-height: rem(8.53px);
+
+  color: rgba(186, 9, 27, 1);
+ }
+ &__history-transaction-wrapper {
+  display: flex;
+  column-gap: rem(5px);
+  align-items: center;
+ }
+ &__history-transaction-icon {
+  width: rem(11.87px);
+  height: rem(12px);
+ }
+ &__history-transaction-operation-name {
+  font-weight: 500;
+  font-size: rem(9px);
+  line-height: rem(10.97px);
+ }
+ &__history-transaction-operation-name span {
+  font-weight: 600;
+  font-size: rem(10px);
+  line-height: rem(12.19px);
+ }
+ &__history-transaction-date {
+  font-size: rem(8px);
+  line-height: rem(9.75px);
+  font-weight: 300;
+ }
+}

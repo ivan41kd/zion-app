@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles/scss/style.css" />
+  <link
+   href="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  "
+   rel="stylesheet"
+  />
+ </head>
+ <body>
+  <section class="dashboard">
+   <div class="dashboard__container">
+    <div class="dashboard__wrapper">
+     <div class="dashboard__tabs">
+      <div class="dashboard__tab active">Повышение уровня</div>
+      <div class="dashboard__tab">Кабинет партнера</div>
+      <div class="dashboard__tab">Лидерская программа</div>
+     </div>
+     <div class="dashboard__content">
+      <div class="dashboard__level level-1">
+       <div class="dashboard__level-profit level-up">
+        <p class="dashboard__level-profit-name">Уровень доходности</p>
+        <div class="dashboard__level-profit-wrapper">
+         <img
+          src="./assets/icons/dashboard/level-logo.svg"
+          alt=""
+          class="dashboard__level-profit-logo"
+         />
+         <div class="dashboard__level-profit-info">
+          <p class="dashboard__level-profit-level">Уровень 1</p>
+          <p class="dashboard__level-profit-value">5%</p>
+         </div>
+        </div>
+       </div>
+       <div class="dashboard__level-tasks">
+        <p class="dashboard__level-tasks-title">Задания</p>
+        <div class="dashboard__level-progress">
+         <div class="dashboard__level-progress-wrapper">
+          <div class="dashboard__level-progress-top-wrapper">
+           <div class="dashboard__level-progress-title-wrapper">
+            <p class="dashboard__level-progress-title">Количество партнеров</p>
+           </div>
+           <div class="dashboard__level-progress-amount-wrapper">
+            <p class="dashboard__level-progress-amount completed">1/1</p>
+            <img
+             src="./assets/icons/dashboard/usdt-icon.svg"
+             alt=""
+             class="dashboard__level-progress-wallet-icon"
+            />
+           </div>
+          </div>
+          <div class="dashboard__level-progress-bar">
+           <div class="dashboard__level-progress-bar-wrapper">
+            <span></span>
+           </div>
+          </div>
+         </div>
+         <div class="dashboard__level-progress-wrapper">
+          <div class="dashboard__level-progress-top-wrapper">
+           <div class="dashboard__level-progress-title-wrapper">
+            <p class="dashboard__level-progress-title">Сумма депозитов</p>
+            <img
+             src="./assets/icons/dashboard/usdt-icon.svg"
+             alt=""
+             class="dashboard__level-progress-wallet-icon"
+            />
+           </div>
+           <div class="dashboard__level-progress-amount-wrapper">
+            <p class="dashboard__level-progress-amount completed">100/100</p>
+           </div>
+          </div>
+          <div class="dashboard__level-progress-bar">
+           <div class="dashboard__level-progress-bar-wrapper">
+            <span></span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="dashboard__invite">
+        <p class="dashboard__invite-title">
+         Укажите ссылку пригласившего вас партнера
+        </p>
+        <input type="text" class="dashboard__invite-input" />
+        <button class="dashboard__invite-button">Сохранить</button>
+       </div>
+       <div class="dashboard__invite-link">
+        <p class="dashboard__invite-link-title">Партнерская ссылка</p>
+        <p class="dashboard__invite-link-value">
+         https://crypto54538949284984 09238490238409234
+        </p>
+        <img
+         src="./assets/icons/dashboard/copy.svg"
+         alt=""
+         class="dashboard__invite-link-icon"
+        />
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="dashboard__dropdown-items">
+     <div class="dashboard__dropdown">
+      <p class="dashboard__dropdown-name">Депозиты Altcoins</p>
+
+      <div class="dashboard__dropdown-menu"></div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <script src="./js/slider/dashboard/dashslider.js"></script>
+  <script src="./js/dashboard/renew/renew.js"></script>
+ </body>
+</html>

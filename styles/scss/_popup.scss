@@ -1,0 +1,54 @@
+.popup {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ z-index: 10;
+ align-items: center;
+ &__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(10px);
+  align-items: center;
+  justify-content: center;
+  background: #2c2c2e;
+  border-radius: 15px;
+  max-width: 370px;
+  width: 100%;
+  height: fit-content;
+  padding: rem(15px) rem(19.5px);
+ }
+ &__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ &__title {
+  font-size: rem(20px);
+  line-height: rem(24.38px);
+  font-weight: 600;
+ }
+ &__subtitle {
+  font-size: rem(12px);
+  line-height: rem(14.63px);
+  color: #9c9c9c;
+  font-weight: 600;
+ }
+ &__text {
+  font-weight: 400;
+  font-size: rem(10px);
+  line-height: rem(12.19px);
+  text-align: center;
+ }
+ &__text span {
+  font-weight: 700;
+ }
+ &__close {
+  align-self: flex-end;
+  width: rem(10.76px);
+  height: rem(10px);
+  cursor: pointer;
+ }
+}
