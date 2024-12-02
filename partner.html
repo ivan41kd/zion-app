@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles/scss/style.css" />
+  <link
+   href="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  "
+   rel="stylesheet"
+  />
+ </head>
+ <body>
+  <section class="dashboard">
+   <div class="dashboard__container">
+    <div class="dashboard__wrapper">
+     <div class="dashboard__tabs">
+      <div class="dashboard__tab">Повышение уровня</div>
+      <div class="dashboard__tab active">Кабинет партнера</div>
+      <div class="dashboard__tab">Лидерская программа</div>
+     </div>
+     <div class="dashboard__content">
+      <div class="dashboard__partner-cards">
+       <div class="dashboard__partner-card">
+        <div class="dashboard__partner-card-info">
+         <p class="dashboard__partner-card-title">Количество пользователей</p>
+         <p class="dashboard__partner-card-value">88</p>
+        </div>
+       </div>
+       <div class="dashboard__partner-card">
+        <div class="dashboard__partner-card-info">
+         <p class="dashboard__partner-card-title">Общий оборот</p>
+         <p class="dashboard__partner-card-value">$ 888,888.88</p>
+        </div>
+       </div>
+       <div class="dashboard__partner-card">
+        <div class="dashboard__partner-card-info">
+         <p class="dashboard__partner-card-title">Выплачено</p>
+         <p class="dashboard__partner-card-value">$ 888,888.88</p>
+        </div>
+       </div>
+       <div class="dashboard__partner-card">
+        <div class="dashboard__partner-card-info">
+         <p class="dashboard__partner-card-title">Общий доход</p>
+         <p class="dashboard__partner-card-value">$ 888,888.88</p>
+        </div>
+       </div>
+       <div class="dashboard__partner-card">
+        <div class="dashboard__partner-card-info">
+         <p class="dashboard__partner-card-title">Доступно к выводу</p>
+         <p class="dashboard__partner-card-value">$ 888,888.88</p>
+        </div>
+        <p class="dashboard__conditions" data-open="partner">Условия вывода</p>
+        <button class="dashboard__partner-card-button">Вывод</button>
+       </div>
+       <div class="dashboard__partner-card">
+        <div class="dashboard__partner-card-info">
+         <p class="dashboard__partner-card-title">Вас пригласил</p>
+         <div class="dashboard__partner-user">
+          <img
+           src="./assets/icons/dashboard/user-icon.svg"
+           alt=""
+           class="dashboard__partner-user-icon"
+          />
+          <p class="dashboard__partner-user-name">mjasajaa</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="dashboard__dropdown-items">
+     <div class="dashboard__dropdown">
+      <p class="dashboard__dropdown-name">Линии</p>
+
+      <div class="dashboard__dropdown-menu">
+       <div class="dashboard__lines">
+        <div class="dashboard__line">
+         <div class="dashboard__line-wrapper">
+          <p class="dashboard__line-title">Для доступа к линии требуется</p>
+          <div class="dashboard__line-top">
+           <p class="dashboard__line-top-title">Личный депозит</p>
+           <p class="dashboard__line-top-value">$ 500.00/$ 500.00</p>
+          </div>
+          <div class="dashboard__line-cols">
+           <div class="dashboard__line-cols-wrapper">
+            <div class="dashboard__line-col">
+             <p class="dashboard__line-col-title">Линия 1</p>
+             <p class="dashboard__line-col-value">5.5%</p>
+            </div>
+            <div class="dashboard__line-col">
+             <p class="dashboard__line-col-title">Друзья</p>
+             <p class="dashboard__line-col-value">88</p>
+            </div>
+           </div>
+           <div class="dashboard__line-cols-wrapper">
+            <div class="dashboard__line-col">
+             <p class="dashboard__line-col-title">Оборот</p>
+             <p class="dashboard__line-col-value">$ 888,888.88</p>
+            </div>
+            <div class="dashboard__line-col">
+             <p class="dashboard__line-col-title">Доход</p>
+             <p class="dashboard__line-col-value">$ 888,888.88</p>
+            </div>
+           </div>
+          </div>
+          <p class="dashboard__line-unhide">Раскрыть</p>
+         </div>
+         <div class="dashboard__line-history">
+          <div class="dashboard__line-history-items">
+           <div class="dashboard__line-history-item">
+            <div class="dashboard__line-history-item-header">
+             <p class="dashboard__line-history-item-title">Пригласитель</p>
+             <div class="dashboard__line-history-user">
+              <img
+               src="./assets/icons/dashboard/user-icon.svg"
+               alt=""
+               class="dashboard__line-history-user-icon"
+              />
+              <p class="dashboard__line-history-user-name">mjasajaa</p>
+             </div>
+            </div>
+            <div class="dashboard__line-history-cols-header">
+             <div class="dashboard__line-history-header-col"></div>
+             <div class="dashboard__line-history-header-col">UserID</div>
+             <div class="dashboard__line-history-header-col">Пригласитель</div>
+             <div class="dashboard__line-history-header-col">Депозит</div>
+             <div class="dashboard__line-history-header-col">Уровень</div>
+             <div class="dashboard__line-history-header-col">
+              Дата регистрации
+             </div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">1</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/user-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit no-deposit">
+               Нет депозита
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">0</div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">2</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/user-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit demo">DEMO</div>
+             </div>
+             <div class="dashboard__line-history-col level-col">
+              <img
+               src="./assets/icons/dashboard/level-2.svg"
+               alt=""
+               class="dashboard__line-history-level"
+              />
+              2
+             </div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">3</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/telegram-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit with-deposit">
+               $ 900.00
+              </div>
+             </div>
+             <div class="dashboard__line-history-col level-col">
+              <img
+               src="./assets/icons/dashboard/level-3.svg"
+               alt=""
+               class="dashboard__line-history-level"
+              />
+              3
+             </div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+           </div>
+           <div class="dashboard__line-history-item">
+            <div class="dashboard__line-history-item-header">
+             <p class="dashboard__line-history-item-title">Пригласитель</p>
+             <div class="dashboard__line-history-user">
+              <img
+               src="./assets/icons/dashboard/user-icon.svg"
+               alt=""
+               class="dashboard__line-history-user-icon"
+              />
+              <p class="dashboard__line-history-user-name">mjasajaa</p>
+             </div>
+            </div>
+            <div class="dashboard__line-history-cols-header">
+             <div class="dashboard__line-history-header-col"></div>
+             <div class="dashboard__line-history-header-col">UserID</div>
+             <div class="dashboard__line-history-header-col">Пригласитель</div>
+             <div class="dashboard__line-history-header-col">Депозит</div>
+             <div class="dashboard__line-history-header-col">Уровень</div>
+             <div class="dashboard__line-history-header-col">
+              Дата регистрации
+             </div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">1</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/user-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit no-deposit">
+               Нет депозита
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">0</div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">2</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/user-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit demo">DEMO</div>
+             </div>
+             <div class="dashboard__line-history-col level-col">
+              <img
+               src="./assets/icons/dashboard/level-2.svg"
+               alt=""
+               class="dashboard__line-history-level"
+              />
+              2
+             </div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">3</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/telegram-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit with-deposit">
+               $ 900.00
+              </div>
+             </div>
+             <div class="dashboard__line-history-col level-col">
+              <img
+               src="./assets/icons/dashboard/level-3.svg"
+               alt=""
+               class="dashboard__line-history-level"
+              />
+              3
+             </div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="dashboard__line">
+         <div class="dashboard__line-wrapper">
+          <p class="dashboard__line-title">Для доступа к линии требуется</p>
+          <div class="dashboard__line-top">
+           <p class="dashboard__line-top-title">Личный депозит</p>
+           <p class="dashboard__line-top-value">$ 500.00/$ 500.00</p>
+          </div>
+          <div class="dashboard__line-cols">
+           <div class="dashboard__line-cols-wrapper">
+            <div class="dashboard__line-col">
+             <p class="dashboard__line-col-title">Линия 1</p>
+             <p class="dashboard__line-col-value">5.5%</p>
+            </div>
+            <div class="dashboard__line-col">
+             <p class="dashboard__line-col-title">Друзья</p>
+             <p class="dashboard__line-col-value">88</p>
+            </div>
+           </div>
+           <div class="dashboard__line-cols-wrapper">
+            <div class="dashboard__line-col">
+             <p class="dashboard__line-col-title">Оборот</p>
+             <p class="dashboard__line-col-value">$ 888,888.88</p>
+            </div>
+            <div class="dashboard__line-col">
+             <p class="dashboard__line-col-title">Доход</p>
+             <p class="dashboard__line-col-value">$ 888,888.88</p>
+            </div>
+           </div>
+          </div>
+          <p class="dashboard__line-unhide">Раскрыть</p>
+         </div>
+         <div class="dashboard__line-history">
+          <div class="dashboard__line-history-items">
+           <div class="dashboard__line-history-item">
+            <div class="dashboard__line-history-item-header">
+             <p class="dashboard__line-history-item-title">Пригласитель</p>
+             <div class="dashboard__line-history-user">
+              <img
+               src="./assets/icons/dashboard/user-icon.svg"
+               alt=""
+               class="dashboard__line-history-user-icon"
+              />
+              <p class="dashboard__line-history-user-name">mjasajaa</p>
+             </div>
+            </div>
+            <div class="dashboard__line-history-cols-header">
+             <div class="dashboard__line-history-header-col"></div>
+             <div class="dashboard__line-history-header-col">UserID</div>
+             <div class="dashboard__line-history-header-col">Пригласитель</div>
+             <div class="dashboard__line-history-header-col">Депозит</div>
+             <div class="dashboard__line-history-header-col">Уровень</div>
+             <div class="dashboard__line-history-header-col">
+              Дата регистрации
+             </div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">1</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/user-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit no-deposit">
+               Нет депозита
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">0</div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">2</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/user-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit demo">DEMO</div>
+             </div>
+             <div class="dashboard__line-history-col level-col">
+              <img
+               src="./assets/icons/dashboard/level-2.svg"
+               alt=""
+               class="dashboard__line-history-level"
+              />
+              2
+             </div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">3</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/telegram-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit with-deposit">
+               $ 900.00
+              </div>
+             </div>
+             <div class="dashboard__line-history-col level-col">
+              <img
+               src="./assets/icons/dashboard/level-3.svg"
+               alt=""
+               class="dashboard__line-history-level"
+              />
+              3
+             </div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+           </div>
+           <div class="dashboard__line-history-item">
+            <div class="dashboard__line-history-item-header">
+             <p class="dashboard__line-history-item-title">Пригласитель</p>
+             <div class="dashboard__line-history-user">
+              <img
+               src="./assets/icons/dashboard/user-icon.svg"
+               alt=""
+               class="dashboard__line-history-user-icon"
+              />
+              <p class="dashboard__line-history-user-name">mjasajaa</p>
+             </div>
+            </div>
+            <div class="dashboard__line-history-cols-header">
+             <div class="dashboard__line-history-header-col"></div>
+             <div class="dashboard__line-history-header-col">UserID</div>
+             <div class="dashboard__line-history-header-col">Пригласитель</div>
+             <div class="dashboard__line-history-header-col">Депозит</div>
+             <div class="dashboard__line-history-header-col">Уровень</div>
+             <div class="dashboard__line-history-header-col">
+              Дата регистрации
+             </div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">1</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/user-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit no-deposit">
+               Нет депозита
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">0</div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">2</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/user-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit demo">DEMO</div>
+             </div>
+             <div class="dashboard__line-history-col level-col">
+              <img
+               src="./assets/icons/dashboard/level-2.svg"
+               alt=""
+               class="dashboard__line-history-level"
+              />
+              2
+             </div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+            <div class="dashboard__line-history-cols">
+             <div class="dashboard__line-history-col">3</div>
+             <div class="dashboard__line-history-col">1234</div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-col-user">
+               <img
+                src="./assets/icons/dashboard/telegram-icon.svg"
+                alt=""
+                class="dashboard__line-history-col-user-icon"
+               />
+               <p class="dashboard__line-history-col-user-name">mjasajaa</p>
+              </div>
+             </div>
+             <div class="dashboard__line-history-col">
+              <div class="dashboard__line-history-deposit with-deposit">
+               $ 900.00
+              </div>
+             </div>
+             <div class="dashboard__line-history-col level-col">
+              <img
+               src="./assets/icons/dashboard/level-3.svg"
+               alt=""
+               class="dashboard__line-history-level"
+              />
+              3
+             </div>
+             <div class="dashboard__line-history-col">14-12-23</div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <script src="./js/dashboard/popup/popup.js"></script>
+  <script src="./js/dashboard/dropdown/dropdown.js"></script>
+  <script src="./js/dashboard/partner/partner.js"></script>
+ </body>
+</html>
