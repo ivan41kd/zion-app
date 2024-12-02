@@ -857,6 +857,7 @@
    z-index: -1;
   }
  }
+
  &__level.level-2 > div {
   position: relative;
   z-index: 2;
@@ -874,6 +875,7 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
  }
  &__level.level-3 > div {
@@ -893,7 +895,14 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
+ }
+ &__level.level-3 &__level-progress-title-wrapper span {
+  color: #c19f00;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
  }
  &__level.level-4 > div {
   position: relative;
@@ -912,7 +921,14 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
+ }
+ &__level.level-4 &__level-progress-title-wrapper span {
+  color: #528cfe;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
  }
  &__level.level-5 > div {
   position: relative;
@@ -931,7 +947,14 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
+ }
+ &__level.level-5 &__level-progress-title-wrapper span {
+  color: #6acedb;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
  }
  &__level.level-6 > div {
   position: relative;
@@ -950,7 +973,14 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
+ }
+ &__level.level-6 &__level-progress-title-wrapper span {
+  color: #57bf6a;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
  }
  &__level.level-7 > div {
   position: relative;
@@ -969,7 +999,14 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
+ }
+ &__level.level-7 &__level-progress-title-wrapper span {
+  color: #8973fc;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
  }
  &__level.level-8 > div {
   position: relative;
@@ -988,7 +1025,14 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
+ }
+ &__level.level-8 &__level-progress-title-wrapper span {
+  color: #cb144b;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
  }
  &__level.level-9 > div {
   position: relative;
@@ -1007,7 +1051,16 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
+ }
+ &__level.level-9 &__level-progress-title-wrapper span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  background: linear-gradient(93.41deg, #dc7326 22.48%, #f79e4b 79.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
  }
  &__level.level-10 > div {
   position: relative;
@@ -1026,7 +1079,17 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
+ }
+ &__level.level-10 &__level-progress-title-wrapper span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  background: linear-gradient(93.41deg, #c86a6a 22.48%, #f31212 79.18%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
  }
  &__level.level-11 > div {
   position: relative;
@@ -1045,7 +1108,17 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
+ }
+ &__level.level-11 &__level-progress-title-wrapper span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  background: linear-gradient(93.41deg, #f10c0c 22.48%, #9d0b0b 79.18%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
  }
  &__level.level-12 > div {
   position: relative;
@@ -1064,6 +1137,7 @@
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
    padding: 1px;
+   z-index: -1;
   }
  }
  &__level-tasks {

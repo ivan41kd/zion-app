@@ -5,7 +5,7 @@ const levels = [
   img: './assets/icons/dashboard/level-1.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 1,
    },
    {
@@ -20,7 +20,7 @@ const levels = [
   img: './assets/icons/dashboard/level-2.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 2,
    },
    {
@@ -35,7 +35,7 @@ const levels = [
   img: './assets/icons/dashboard/level-3.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 4,
    },
    {
@@ -47,7 +47,7 @@ const levels = [
     maxleader: 1,
    },
    {
-    bonus: 0,
+    bonus: 50,
    },
   ],
  },
@@ -57,13 +57,19 @@ const levels = [
   img: './assets/icons/dashboard/level-4.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 8,
+   },
+   {
     deposit: 0,
     maxdeposit: 8000,
+   },
+   {
     leader: 0,
     maxleader: 1,
-    bonus: 0,
+   },
+   {
+    bonus: 100,
    },
   ],
  },
@@ -73,13 +79,19 @@ const levels = [
   img: './assets/icons/dashboard/level-5.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 16,
+   },
+   {
     deposit: 0,
     maxdeposit: 40000,
+   },
+   {
     leader: 0,
     maxleader: 1,
-    bonus: 0,
+   },
+   {
+    bonus: 400,
    },
   ],
  },
@@ -89,13 +101,19 @@ const levels = [
   img: './assets/icons/dashboard/level-6.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 24,
+   },
+   {
     deposit: 0,
     maxdeposit: 80000,
+   },
+   {
     leader: 0,
     maxleader: 1,
-    bonus: 0,
+   },
+   {
+    bonus: 800,
    },
   ],
  },
@@ -105,13 +123,19 @@ const levels = [
   img: './assets/icons/dashboard/level-7.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 36,
+   },
+   {
     deposit: 0,
     maxdeposit: 160000,
+   },
+   {
     leader: 0,
     maxleader: 1,
-    bonus: 0,
+   },
+   {
+    bonus: 1600,
    },
   ],
  },
@@ -121,13 +145,19 @@ const levels = [
   img: './assets/icons/dashboard/level-8.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 48,
+   },
+   {
     deposit: 0,
     maxdeposit: 320000,
+   },
+   {
     leader: 0,
     maxleader: 1,
-    bonus: 0,
+   },
+   {
+    bonus: 3200,
    },
   ],
  },
@@ -137,13 +167,19 @@ const levels = [
   img: './assets/icons/dashboard/level-9.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 60,
+   },
+   {
     deposit: 0,
     maxdeposit: 640000,
+   },
+   {
     leader: 0,
     maxleader: 1,
-    bonus: 0,
+   },
+   {
+    bonus: 6400,
    },
   ],
  },
@@ -153,13 +189,19 @@ const levels = [
   img: './assets/icons/dashboard/level-10.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 120,
+   },
+   {
     deposit: 0,
     maxdeposit: 1280000,
+   },
+   {
     leader: 0,
     maxleader: 1,
-    bonus: 0,
+   },
+   {
+    bonus: 12800,
    },
   ],
  },
@@ -169,13 +211,19 @@ const levels = [
   img: './assets/icons/dashboard/level-11.svg',
   tasks: [
    {
-    partners: 0,
+    partners: 1,
     maxpartners: 240,
+   },
+   {
     deposit: 0,
-    maxdeposit: 2560000,
+    maxdeposit: 1280000 * 2,
+   },
+   {
     leader: 0,
     maxleader: 1,
-    bonus: 0,
+   },
+   {
+    bonus: 12800 * 2,
    },
   ],
  },
@@ -186,12 +234,21 @@ const levels = [
  },
 ];
 
-const currentLevel = levels[2];
-const levelTasks = currentLevel.tasks;
+let currentLevel = levels[0];
+let levelTasks = currentLevel.tasks;
+const levelSlides = document.querySelectorAll('.dashboard__progress-slide');
 
+function defPercent(value, value2) {
+ let percent = (value / value2) * 100;
+
+ if ('Infinity' == percent) effect17.value = 'Неопределено';
+ else if (percent == 0) return 5 + '%';
+ else if (percent < 10) return 5 + '%';
+ else return percent + '%';
+}
 const renderLevel = ({ level, profit, img }) => {
  const dashboardLevel = document.querySelector('.dashboard__level');
- dashboardLevel.classList.add(`level-${level}`);
+ dashboardLevel.className = `dashboard__level level-${level}`;
  const profitWrapper = document.querySelector(
   '.dashboard__level-profit-wrapper'
  );
@@ -219,8 +276,8 @@ const renderTasks = (tasks) => {
 
   switch (index) {
    case 0: {
-    console.log(task.partners);
     const currentWrapper = progressWrappers[index];
+    currentWrapper.innerHTML = '';
     currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
     <div class="dashboard__level-progress-title-wrapper">
      <p class="dashboard__level-progress-title">Количество партнеров</p>
@@ -242,10 +299,16 @@ const renderTasks = (tasks) => {
     </div>
    </div>`;
 
+    const progressBar = currentWrapper.querySelector(
+     '.dashboard__level-progress-bar-wrapper'
+    );
+    progressBar.style.width = defPercent(task.partners, task.maxpartners);
+
     break;
    }
    case 1: {
     const currentWrapper = progressWrappers[index];
+    currentWrapper.innerHTML = '';
     currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
     <div class="dashboard__level-progress-title-wrapper">
     <p class="dashboard__level-progress-title">Сумма депозитов</p>
@@ -271,10 +334,15 @@ const renderTasks = (tasks) => {
      <span></span>
     </div>
    </div>`;
+    const progressBar = currentWrapper.querySelector(
+     '.dashboard__level-progress-bar-wrapper'
+    );
+    progressBar.style.width = defPercent(task.deposit, task.maxdeposit);
     break;
    }
    case 2: {
     const currentWrapper = progressWrappers[index];
+    currentWrapper.innerHTML = '';
     currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
     <div class="dashboard__level-progress-title-wrapper">
     <p class="dashboard__level-progress-title">Лидер в 1 линии уровня</p>
@@ -283,6 +351,7 @@ const renderTasks = (tasks) => {
     alt=""
     class="dashboard__level-progress-wallet-icon"
    />
+   <span>${currentLevel.level}</span>
     </div>
     <div class="dashboard__level-progress-amount-wrapper">
      <p class="dashboard__level-progress-amount ${
@@ -295,11 +364,16 @@ const renderTasks = (tasks) => {
      <span></span>
     </div>
    </div>`;
+    const progressBar = currentWrapper.querySelector(
+     '.dashboard__level-progress-bar-wrapper'
+    );
+    progressBar.style.width = defPercent(task.leader, task.maxleader);
     break;
    }
    case 3: {
     console.log(task);
     const currentWrapper = progressWrappers[index];
+    currentWrapper.innerHTML = '';
     currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
     <div class="dashboard__level-progress-title-wrapper">
     <p class="dashboard__level-progress-title">Бонус к депозиту</p>
@@ -330,4 +404,18 @@ const renderTasks = (tasks) => {
 };
 
 renderLevel(currentLevel);
+
+levelSlides.forEach((slide, index) => {
+ slide.addEventListener('click', () => {
+  currentLevel = levels[index - 2];
+  levelTasks = currentLevel.tasks;
+  renderLevel(currentLevel);
+  const dashboardProgress = document.querySelector(
+   '.dashboard__level-progress'
+  );
+  dashboardProgress.innerHTML = '';
+  renderTasks(levelTasks);
+ });
+});
+
 renderTasks(levelTasks);
