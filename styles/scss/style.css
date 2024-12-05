@@ -501,7 +501,7 @@ input[type=number] {
 .dashboard__card-wallet {
   display: flex;
   -moz-column-gap: 0.3571428571rem;
-       column-gap: 0.3571428571rem;
+  column-gap: 0.3571428571rem;
   align-items: center;
 }
 .dashboard__card-wallet-logo {
@@ -566,7 +566,7 @@ input[type=number] {
   border-radius: 1.0714285714rem;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   padding: 0.7142857143rem 1.2142857143rem;
 }
 .dashboard__profit-graph {
@@ -642,7 +642,7 @@ input[type=number] {
   border-radius: 1.0714285714rem;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
 }
 .dashboard__partner-info {
   display: flex;
@@ -740,7 +740,7 @@ input[type=number] {
   display: flex;
   align-items: center;
   -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
   cursor: pointer;
 }
 .dashboard__dropdown-name::after {
@@ -777,7 +777,7 @@ input[type=number] {
 .dashboard__history-operation-name-wrapper {
   display: flex;
   -moz-column-gap: 0.3571428571rem;
-       column-gap: 0.3571428571rem;
+  column-gap: 0.3571428571rem;
   align-items: center;
 }
 .dashboard__history-operation-icon {
@@ -811,7 +811,7 @@ input[type=number] {
   display: flex;
   align-items: center;
   -moz-column-gap: 0.3571428571rem;
-       column-gap: 0.3571428571rem;
+  column-gap: 0.3571428571rem;
 }
 .dashboard__history-transactions {
   background: rgb(44, 44, 46);
@@ -881,7 +881,7 @@ input[type=number] {
   padding-left: 1.1071428571rem;
   padding-right: 1.1071428571rem;
   -moz-column-gap: 0.7142857143rem;
-       column-gap: 0.7142857143rem;
+  column-gap: 0.7142857143rem;
   margin-bottom: 0.7142857143rem;
 }
 .dashboard__renew-title {
@@ -891,8 +891,9 @@ input[type=number] {
 }
 .dashboard__renew-button-wrapper {
   border: 0.0357142857rem solid rgb(156, 156, 156);
-  width: 3rem;
-  height: 1.5714285714rem;
+  width: 100%;
+  max-width: 42px;
+  height: 22px;
   border-radius: 0.3571428571rem;
   display: flex;
   align-items: center;
@@ -901,8 +902,9 @@ input[type=number] {
 }
 .dashboard__renew-button {
   border-radius: 0.2142857143rem;
-  width: 1.5rem;
-  height: 1.1428571429rem;
+  width: 100%;
+  max-width: 21px;
+  height: 16px;
   border: none;
   background: rgb(238, 100, 103);
   transition: 0.3s;
@@ -977,7 +979,7 @@ input[type=number] {
   display: flex;
   align-items: center;
   -moz-column-gap: 0.2142857143rem;
-       column-gap: 0.2142857143rem;
+  column-gap: 0.2142857143rem;
 }
 .dashboard__wallet-logo {
   width: 1.2592857143rem;
@@ -994,7 +996,7 @@ input[type=number] {
   width: 100%;
   max-width: 21.8571428571rem;
   -moz-column-gap: 0.7142857143rem;
-       column-gap: 0.7142857143rem;
+  column-gap: 0.7142857143rem;
 }
 .dashboard__trade-deposit {
   background: rgb(44, 44, 46);
@@ -1018,7 +1020,7 @@ input[type=number] {
 .dashboard__trade-wallet {
   display: flex;
   -moz-column-gap: 0.3571428571rem;
-       column-gap: 0.3571428571rem;
+  column-gap: 0.3571428571rem;
   align-items: center;
 }
 .dashboard__trade-wallet-logo {
@@ -1095,11 +1097,11 @@ input[type=number] {
 }
 .dashboard__trade-pair {
   -moz-column-gap: 0.7142857143rem;
-       column-gap: 0.7142857143rem;
+  column-gap: 0.7142857143rem;
 }
 .dashboard__trade-pair-wallet {
   -moz-column-gap: 0.3571428571rem;
-       column-gap: 0.3571428571rem;
+  column-gap: 0.3571428571rem;
 }
 .dashboard__trade-pair-name {
   font-size: 0.5714285714rem;
@@ -1160,7 +1162,7 @@ input[type=number] {
 .dashboard__exchange-wallet {
   display: flex;
   -moz-column-gap: 0.3571428571rem;
-       column-gap: 0.3571428571rem;
+  column-gap: 0.3571428571rem;
 }
 .dashboard__exchange-wallet-icon {
   width: 2.5785714286rem;
@@ -1185,7 +1187,7 @@ input[type=number] {
 .dashboard__tabs {
   display: flex;
   -moz-column-gap: 0.3571428571rem;
-       column-gap: 0.3571428571rem;
+  column-gap: 0.3571428571rem;
   margin-bottom: 1.7857142857rem;
   width: 100%;
 }
@@ -1215,7 +1217,7 @@ input[type=number] {
   display: flex;
   align-items: center;
   -moz-column-gap: 1.4285714286rem;
-       column-gap: 1.4285714286rem;
+  column-gap: 1.4285714286rem;
 }
 .dashboard__level {
   width: 100%;
@@ -1814,7 +1816,7 @@ input[type=number] {
 .dashboard__level-progress-amount-wrapper, .dashboard__level-progress-title-wrapper {
   display: flex;
   -moz-column-gap: 0.3571428571rem;
-       column-gap: 0.3571428571rem;
+  column-gap: 0.3571428571rem;
   align-items: center;
 }
 .dashboard__level-progress-wallet-icon {
@@ -1894,7 +1896,7 @@ input[type=number] {
   padding: 15px 8px;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.0588235294) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   border-radius: 15px;
   height: -moz-fit-content;
   height: fit-content;
@@ -1904,7 +1906,7 @@ input[type=number] {
   display: flex;
   align-items: center;
   -moz-column-gap: 1.1428571429rem;
-       column-gap: 1.1428571429rem;
+  column-gap: 1.1428571429rem;
   margin-bottom: 0.7142857143rem;
 }
 .dashboard__progress-task-item {
@@ -1918,7 +1920,7 @@ input[type=number] {
 .dashboard__progress-task-item-info {
   display: flex;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   align-items: center;
 }
 .dashboard__progress-task-icon {
@@ -2049,7 +2051,7 @@ input[type=number] {
   width: 100%;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.0588235294) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   background: #2c2c2e;
   border-radius: 10px;
 }
@@ -2084,7 +2086,7 @@ input[type=number] {
 .dashboard__partner-user {
   display: flex;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
 }
 .dashboard__partner-user-icon {
   width: 1.4285714286rem;
@@ -2200,14 +2202,14 @@ input[type=number] {
 .dashboard__line-history-item-header {
   display: flex;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   align-items: center;
   margin-bottom: 10px;
 }
 .dashboard__line-history-user {
   display: flex;
   -moz-column-gap: 2px;
-       column-gap: 2px;
+  column-gap: 2px;
   align-items: center;
 }
 .dashboard__line-history-user-icon {
@@ -2250,7 +2252,7 @@ input[type=number] {
 .dashboard__line-history-col-user {
   display: flex;
   -moz-column-gap: 2px;
-       column-gap: 2px;
+  column-gap: 2px;
   align-items: center;
 }
 .dashboard__line-history-col-user-icon {
@@ -2273,7 +2275,7 @@ input[type=number] {
 }
 .dashboard__line-history-col.level-col {
   -moz-column-gap: 3px;
-       column-gap: 3px;
+  column-gap: 3px;
 }
 .dashboard__line-history-deposit {
   font-size: 7px;
@@ -2349,7 +2351,7 @@ input[type=number] {
   background: #2c2c2e;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.0588235294) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   padding: 10px 6px;
   padding-right: 0;
 }
@@ -2369,7 +2371,7 @@ input[type=number] {
   width: 100%;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.0588235294) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   background: #2c2c2e;
   border-radius: 10px;
   padding: 10px 14px 14px 10px;
@@ -2395,7 +2397,7 @@ input[type=number] {
   border-bottom: 1px solid;
   padding-bottom: 2px;
   -o-border-image: linear-gradient(90deg, #a2a2a2 -1.09%, rgba(162, 162, 162, 0) 100.91%);
-     border-image: linear-gradient(90deg, #a2a2a2 -1.09%, rgba(162, 162, 162, 0) 100.91%);
+  border-image: linear-gradient(90deg, #a2a2a2 -1.09%, rgba(162, 162, 162, 0) 100.91%);
   border-image-slice: 1;
 }
 .dashboard__leader-stats-img {
@@ -2522,7 +2524,7 @@ input[type=number] {
 .dashboard__block-line-header {
   display: flex;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   padding: 0 10.5px;
   cursor: pointer;
 }
@@ -2555,7 +2557,7 @@ input[type=number] {
   display: flex;
   align-items: center;
   -moz-column-gap: 2px;
-       column-gap: 2px;
+  column-gap: 2px;
 }
 .dashboard__block-line-col-level p {
   font-size: 15px;
@@ -2628,7 +2630,7 @@ input[type=number] {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .dashboard__block-line-button.completed::after {
   display: block;
@@ -2769,7 +2771,7 @@ input[type=number] {
 .dashboard__stats-item-wallet {
   display: flex;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
   align-items: center;
 }
 .dashboard__stats-item-info-title {
@@ -2882,7 +2884,7 @@ input[type=number] {
   width: 100%;
   display: flex;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   cursor: pointer;
   background: rgb(44, 44, 46);
   border: 1px solid rgb(255, 255, 255);
@@ -3014,7 +3016,7 @@ input[type=number] {
   align-items: center;
   justify-content: flex-end;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .dashboard__datepicker {
   position: absolute;
@@ -3042,7 +3044,7 @@ input[type=number] {
 .dashboard__datepicker-current-date {
   display: flex;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
   justify-content: center;
 }
 .dashboard__datepicker-current-date-value {
@@ -3179,7 +3181,7 @@ input[type=number] {
   width: 100%;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
 }
 .dashboard__history-trade-card-title {
   font-weight: 400;
@@ -3356,7 +3358,7 @@ input[type=number] {
   border-radius: 15px;
   box-shadow: 0px 0px 4.6px 1px rgb(221, 192, 129);
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
 }
 .dashboard__deposit-slide-item.dash-1000::before {
   background: linear-gradient(93.41deg, #ddc081 22.48%, #5f976e 79.18%);
@@ -3375,12 +3377,12 @@ input[type=number] {
 .dashboard__deposit-slide-item.dash-50-999 {
   box-shadow: 0px 0px 4.6px 1px rgb(255, 255, 255);
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
 }
 .dashboard__deposit-slide-title-wrapper {
   display: flex;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   align-items: center;
 }
 .dashboard__deposit-slide-sticker {
@@ -3507,7 +3509,7 @@ input[type=number] {
   align-items: center;
   justify-content: center;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
 }
 .dashboard__deposit-slide-level-number {
   font-weight: 700;
@@ -3536,7 +3538,7 @@ input[type=number] {
   display: flex;
   justify-content: center;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
   cursor: pointer;
 }
 .dashboard__more-top-name {
@@ -3584,7 +3586,7 @@ input[type=number] {
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   padding: 20px;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -3729,7 +3731,7 @@ input[type=number] {
   display: flex;
   align-self: center;
   -moz-column-gap: 9px;
-       column-gap: 9px;
+  column-gap: 9px;
   align-items: center;
 }
 .dashboard__create-deposit-wallets-logo {
@@ -3763,7 +3765,7 @@ input[type=number] {
   display: flex;
   align-items: center;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .dashboard__create-deposit-item-wrapper.commission {
   justify-content: space-between;
@@ -3810,7 +3812,7 @@ input[type=number] {
   padding: 19px 0;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   border-radius: 15px;
 }
 .dashboard__qr-code-icon {
@@ -3826,7 +3828,7 @@ input[type=number] {
   padding-bottom: 0;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   border-radius: 15px;
 }
 .dashboard__create-deposit-address-value {
@@ -3851,7 +3853,7 @@ input[type=number] {
   padding: 17px 0;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   border-radius: 15px;
 }
 .dashboard__create-deposit-minimum-text {
@@ -3866,7 +3868,7 @@ input[type=number] {
   padding: 11.5px 0;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   -webkit-backdrop-filter: blur(32.2999992371px);
-          backdrop-filter: blur(32.2999992371px);
+  backdrop-filter: blur(32.2999992371px);
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -3877,7 +3879,7 @@ input[type=number] {
   align-items: center;
   max-width: 232px;
   -moz-column-gap: 17px;
-       column-gap: 17px;
+  column-gap: 17px;
 }
 .dashboard__create-deposit-attention-text {
   font-weight: 600;
@@ -3970,7 +3972,7 @@ input[type=number] {
   display: flex;
   align-items: center;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 .dashboard__withdraw-item-title {
   font-weight: 600;
@@ -4132,7 +4134,7 @@ input[type=number] {
   display: flex;
   justify-content: center;
   -moz-column-gap: 9px;
-       column-gap: 9px;
+  column-gap: 9px;
   align-items: center;
 }
 .dashboard__withdraw-wallet-top-icon {
@@ -4147,7 +4149,7 @@ input[type=number] {
 .dashboard__withdraw-avaliable-wallet {
   display: flex;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
 }
 .dashboard__withdraw-avaliable-wallet-icon {
   width: 26.25px;

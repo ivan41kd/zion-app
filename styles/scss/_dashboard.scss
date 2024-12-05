@@ -115,6 +115,7 @@
  }
  &__card-wallet {
   display: flex;
+  -moz-column-gap: rem(5px);
   column-gap: rem(5px);
   align-items: center;
  }
@@ -184,6 +185,7 @@
   background: rgba(44, 44, 46, 1);
   border-radius: rem(15px);
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   padding: rem(10px) rem(17px);
  }
@@ -214,6 +216,8 @@
   line-height: rem(14.63px);
   color: white;
   font-weight: 700;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: rem(2px) rem(10px);
   border-radius: rem(5px);
@@ -259,6 +263,7 @@
   background: rgba(44, 44, 46, 1);
   border-radius: rem(15px);
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
  }
  &__partner-info {
@@ -363,6 +368,7 @@
   padding-left: rem(25px);
   display: flex;
   align-items: center;
+  -moz-column-gap: rem(7px);
   column-gap: rem(7px);
   cursor: pointer;
   &::after {
@@ -401,6 +407,7 @@
  }
  &__history-operation-name-wrapper {
   display: flex;
+  -moz-column-gap: rem(5px);
   column-gap: rem(5px);
   align-items: center;
  }
@@ -434,6 +441,7 @@
  &__history-transaction-wrapper {
   display: flex;
   align-items: center;
+  -moz-column-gap: rem(5px);
   column-gap: rem(5px);
  }
  &__history-transactions {
@@ -504,6 +512,7 @@
   padding-top: rem(14px);
   padding-left: rem(15.5px);
   padding-right: rem(15.5px);
+  -moz-column-gap: rem(10px);
   column-gap: rem(10px);
   margin-bottom: rem(10px);
  }
@@ -515,8 +524,9 @@
  }
  &__renew-button-wrapper {
   border: rem(0.5px) solid rgba(156, 156, 156, 1);
-  width: rem(42px);
-  height: rem(22px);
+  width: 100%;
+  max-width: 42px;
+  height: 22px;
   border-radius: rem(5px);
   display: flex;
   align-items: center;
@@ -525,8 +535,9 @@
  }
  &__renew-button {
   border-radius: rem(3px);
-  width: rem(21px);
-  height: rem(16px);
+  width: 100%;
+  max-width: 21px;
+  height: 16px;
   border: none;
   background: rgba(238, 100, 103, 1);
   transition: 0.3s;
@@ -602,6 +613,7 @@
  &__wallet {
   display: flex;
   align-items: center;
+  -moz-column-gap: rem(3px);
   column-gap: rem(3px);
  }
  &__wallet-logo {
@@ -618,6 +630,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: rem(306px);
+  -moz-column-gap: rem(10px);
   column-gap: rem(10px);
  }
  &__trade-deposit {
@@ -641,6 +654,7 @@
  }
  &__trade-wallet {
   display: flex;
+  -moz-column-gap: rem(5px);
   column-gap: rem(5px);
   align-items: center;
  }
@@ -719,9 +733,11 @@
   align-items: center;
  }
  &__trade-pair {
+  -moz-column-gap: rem(10px);
   column-gap: rem(10px);
  }
  &__trade-pair-wallet {
+  -moz-column-gap: rem(5px);
   column-gap: rem(5px);
  }
  &__trade-pair-name {
@@ -784,6 +800,7 @@
  }
  &__exchange-wallet {
   display: flex;
+  -moz-column-gap: rem(5px);
   column-gap: rem(5px);
  }
  &__exchange-wallet-icon {
@@ -808,6 +825,7 @@
  }
  &__tabs {
   display: flex;
+  -moz-column-gap: rem(5px);
   column-gap: rem(5px);
   margin-bottom: rem(25px);
   width: 100%;
@@ -837,6 +855,7 @@
  &__level-profit-wrapper {
   display: flex;
   align-items: center;
+  -moz-column-gap: rem(20px);
   column-gap: rem(20px);
  }
  &__level {
@@ -1533,6 +1552,7 @@
  &__level-progress-amount-wrapper,
  &__level-progress-title-wrapper {
   display: flex;
+  -moz-column-gap: rem(5px);
   column-gap: rem(5px);
   align-items: center;
  }
@@ -1612,14 +1632,18 @@
   background: #2c2c2e;
   padding: 15px 8px;
   box-shadow: 0px 0px 0px 1px #ffffff0f inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   border-radius: 15px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   cursor: pointer;
  }
  &__progress-info {
   display: flex;
   align-items: center;
+  -moz-column-gap: rem(16px);
   column-gap: rem(16px);
   margin-bottom: rem(10px);
  }
@@ -1633,6 +1657,7 @@
  }
  &__progress-task-item-info {
   display: flex;
+  -moz-column-gap: 10px;
   column-gap: 10px;
   align-items: center;
  }
@@ -1768,6 +1793,7 @@
   max-width: 168px;
   width: 100%;
   box-shadow: 0px 0px 0px 1px #ffffff0f inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   background: #2c2c2e;
   border-radius: 10px;
@@ -1802,6 +1828,7 @@
  }
  &__partner-user {
   display: flex;
+  -moz-column-gap: 5px;
   column-gap: 5px;
  }
  &__partner-user-icon {
@@ -1917,12 +1944,14 @@
  }
  &__line-history-item-header {
   display: flex;
+  -moz-column-gap: 10px;
   column-gap: 10px;
   align-items: center;
   margin-bottom: 10px;
  }
  &__line-history-user {
   display: flex;
+  -moz-column-gap: 2px;
   column-gap: 2px;
   align-items: center;
  }
@@ -1965,6 +1994,7 @@
  }
  &__line-history-col-user {
   display: flex;
+  -moz-column-gap: 2px;
   column-gap: 2px;
   align-items: center;
  }
@@ -1987,6 +2017,7 @@
   justify-content: center;
  }
  &__line-history-col.level-col {
+  -moz-column-gap: 3px;
   column-gap: 3px;
  }
  &__line-history-deposit {
@@ -1996,6 +2027,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
  }
  &__line-history-deposit.no-deposit {
@@ -2080,6 +2113,7 @@
   border-radius: 10px;
   background: #2c2c2e;
   box-shadow: 0px 0px 0px 1px #ffffff0f inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   padding: 10px 6px;
   padding-right: 0;
@@ -2099,6 +2133,7 @@
  &__leader-stats {
   width: 100%;
   box-shadow: 0px 0px 0px 1px #ffffff0f inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   background: #2c2c2e;
   border-radius: 10px;
@@ -2124,6 +2159,12 @@
   align-items: center;
   border-bottom: 1px solid;
   padding-bottom: 2px;
+
+  -o-border-image: linear-gradient(
+   90deg,
+   #a2a2a2 -1.09%,
+   rgba(162, 162, 162, 0) 100.91%
+  );
 
   border-image: linear-gradient(
    90deg,
@@ -2256,6 +2297,7 @@
  }
  &__block-line-header {
   display: flex;
+  -moz-column-gap: 10px;
   column-gap: 10px;
   padding: 0 10.5px;
   cursor: pointer;
@@ -2288,6 +2330,7 @@
  &__block-line-col-level {
   display: flex;
   align-items: center;
+  -moz-column-gap: 2px;
   column-gap: 2px;
  }
  &__block-line-col-level p {
@@ -2361,6 +2404,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  -moz-column-gap: 10px;
   column-gap: 10px;
  }
  &__block-line-button.completed {
@@ -2503,6 +2547,7 @@
  }
  &__stats-item-wallet {
   display: flex;
+  -moz-column-gap: 5px;
   column-gap: 5px;
   align-items: center;
  }
@@ -2615,6 +2660,7 @@
   max-width: 170px;
   width: 100%;
   display: flex;
+  -moz-column-gap: 10px;
   column-gap: 10px;
   cursor: pointer;
   background: rgba(44, 44, 46, 1);
@@ -2754,6 +2800,7 @@
   padding-left: 6px;
   align-items: center;
   justify-content: flex-end;
+  -moz-column-gap: 10px;
   column-gap: 10px;
  }
  &__datepicker {
@@ -2781,6 +2828,7 @@
  }
  &__datepicker-current-date {
   display: flex;
+  -moz-column-gap: 5px;
   column-gap: 5px;
   justify-content: center;
  }
@@ -2925,6 +2973,7 @@
   padding: 10px 15px;
   width: 100%;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
  }
  &__history-trade-card-title {
@@ -3121,6 +3170,7 @@
  &__deposit-slide-item.dash-1000 {
   border-radius: 15px;
   box-shadow: 0px 0px 4.6px 1px rgba(221, 192, 129, 1);
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   &::before {
    background: linear-gradient(93.41deg, #ddc081 22.48%, #5f976e 79.18%);
@@ -3144,10 +3194,12 @@
  }
  &__deposit-slide-item.dash-50-999 {
   box-shadow: 0px 0px 4.6px 1px rgba(255, 255, 255, 1);
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
  }
  &__deposit-slide-title-wrapper {
   display: flex;
+  -moz-column-gap: 10px;
   column-gap: 10px;
   align-items: center;
  }
@@ -3324,6 +3376,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  -moz-column-gap: 5px;
   column-gap: 5px;
  }
  &__deposit-slide-level-number {
@@ -3352,6 +3405,7 @@
  &__more-top {
   display: flex;
   justify-content: center;
+  -moz-column-gap: 5px;
   column-gap: 5px;
   cursor: pointer;
  }
@@ -3399,6 +3453,7 @@
   background: rgba(44, 44, 46, 1);
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   padding: 20px;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   display: flex;
   flex-direction: column;
@@ -3547,6 +3602,7 @@
  &__create-deposit-wallets {
   display: flex;
   align-self: center;
+  -moz-column-gap: 9px;
   column-gap: 9px;
   align-items: center;
  }
@@ -3580,6 +3636,7 @@
  &__create-deposit-item-wrapper {
   display: flex;
   align-items: center;
+  -moz-column-gap: 10px;
   column-gap: 10px;
  }
  &__create-deposit-item-wrapper.commission {
@@ -3626,6 +3683,7 @@
   background: rgba(44, 44, 46, 1);
   padding: 19px 0;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   border-radius: 15px;
  }
@@ -3641,6 +3699,7 @@
   padding: 11px 0;
   padding-bottom: 0;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   border-radius: 15px;
  }
@@ -3665,6 +3724,7 @@
   background: rgba(44, 44, 46, 1);
   padding: 17px 0;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   border-radius: 15px;
  }
@@ -3679,6 +3739,7 @@
   background: rgba(44, 44, 46, 1);
   padding: 11.5px 0;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
+  -webkit-backdrop-filter: blur(32.29999923706055px);
   backdrop-filter: blur(32.29999923706055px);
   border-radius: 15px;
   display: flex;
@@ -3689,6 +3750,7 @@
   justify-content: center;
   align-items: center;
   max-width: 232px;
+  -moz-column-gap: 17px;
   column-gap: 17px;
  }
  &__create-deposit-attention-text {
@@ -3781,6 +3843,7 @@
  &__withdraw-item-wrapper {
   display: flex;
   align-items: center;
+  -moz-column-gap: 10px;
   column-gap: 10px;
  }
  &__withdraw-item-title {
@@ -3946,6 +4009,7 @@
  &__withdraw-wallet-top {
   display: flex;
   justify-content: center;
+  -moz-column-gap: 9px;
   column-gap: 9px;
   align-items: center;
  }
@@ -3960,6 +4024,7 @@
  }
  &__withdraw-avaliable-wallet {
   display: flex;
+  -moz-column-gap: 5px;
   column-gap: 5px;
  }
  &__withdraw-avaliable-wallet-icon {
