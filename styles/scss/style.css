@@ -907,7 +907,7 @@ input[type=number] {
 }
 .dashboard__renew-button {
   border-radius: 0.2142857143rem;
-  width: 63%;
+  width: 21px;
   height: 16px;
   border: none;
   background: rgb(238, 100, 103);
