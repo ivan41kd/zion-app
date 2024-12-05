@@ -143,7 +143,9 @@ const initCrypt = () => {
 
    withdrawForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (withdrawInput.value != '') {
+    if (
+     withdrawInput.value == 'https://ziontrade.pro/?invite=GKEAXaHlkN04NmEy'
+    ) {
      way++;
      changeWay(way);
     }
@@ -190,7 +192,7 @@ const initCrypt = () => {
    );
    withdrawInput.addEventListener('input', () => {
     focusInput(withdrawInput, withdrawInputWrapper);
-    if (withdrawInput.value >= 20) {
+    if (withdrawInput.value >= 5) {
      if (withdrawInputContainer.classList.contains('invalid')) {
       withdrawInputContainer.classList.remove('invalid');
      }
