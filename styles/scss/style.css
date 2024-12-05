@@ -4219,7 +4219,7 @@ input[type=number] {
 }
 @media screen and (max-width: 768px) {
   .dashboard__renew-button {
-    width: 21px;
+    width: 3px;
   }
 }
 
