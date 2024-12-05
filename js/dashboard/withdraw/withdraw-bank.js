@@ -71,6 +71,7 @@ const initBank = () => {
                </div>
 `;
   } else if (way == 1) {
+   console.log(way);
    withdrawTitle.textContent = 'Введите номер карты';
    withdrawAvaliable.style.display = 'none';
    withdrawItemsWrapper.remove();
@@ -154,7 +155,7 @@ const initBank = () => {
 
    withdrawForm.append(more);
    withdrawPage.append(withdrawFormWrapper);
-  } else if (way == 3) {
+  } else if (way == 2) {
    const dashContent = document.querySelector('.dashboard__content');
    dashContent.append(more);
    const existWithDraw = document.querySelector(
@@ -200,12 +201,14 @@ const initBank = () => {
      changeWay(way);
     });
    });
-  } else if (way == 4) {
+  } else if (way == 3) {
    withdrawTitle.textContent = 'Введите ФИО';
    const withdrawItemsWrapper = document.querySelector(
     '.dashboard__withdraw-items'
    );
-   withdrawItemsWrapper.remove();
+   if (withdrawItemsWrapper) {
+    withdrawItemsWrapper.remove();
+   }
 
    const withdrawFormWrapper = document.createElement('div');
    withdrawFormWrapper.className = 'dashboard__withdraw-input-form';
@@ -271,7 +274,7 @@ const initBank = () => {
      withdrawInputWrapper.append(spanError);
     }
    });
-  } else if (way == 5) {
+  } else if (way == 4) {
    withdrawTitle.textContent = 'Введите сумму';
    withdrawAvaliable.style.display = 'flex';
    const existWithDraw = document.querySelector(
@@ -349,7 +352,7 @@ const initBank = () => {
 
    withdrawForm.append(more);
    withdrawPage.append(withdrawFormWrapper);
-  } else if (way == 6) {
+  } else if (way == 5) {
    withdrawAvaliable.style.display = 'none';
    withdrawTitle.textContent = 'Введите код подтверждения';
 
@@ -432,7 +435,7 @@ const initBank = () => {
      withdrawInputWrapper.append(spanError);
     }
    });
-  } else if (way == 7) {
+  } else if (way == 6) {
    withdrawTop.innerHTML = `
            <div class="dashboard__withdraw-title-wrapper">
            <h1 class="dashboard__withdraw-title">Запрос на вывод
@@ -491,12 +494,10 @@ const initBank = () => {
 
   withdrawItems.forEach((item) => {
    item.addEventListener('click', () => {
-    initway = initway + 1;
-    console.log(initway);
+    console.log(initway++);
     changeWay(initway);
    });
   });
  };
- changeWay(initway + 1);
- attachEventListeners();
+ changeWay(0);
 };
