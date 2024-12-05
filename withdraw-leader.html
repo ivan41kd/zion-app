@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles/scss/style.css" />
+ </head>
+ <body>
+  <section class="dashboard">
+   <div class="dashboard__container">
+    <div class="dashboard__wrapper">
+     <div class="dashboard__content">
+      <div class="dashboard__withdraw">
+       <div class="dashboard__withdraw-top">
+        <div class="dashboard__withdraw-title-wrapper">
+         <h1 class="dashboard__withdraw-title">Вывод средств</h1>
+         <p class="dashboard__withdraw-subtitle">Лидерская программа</p>
+        </div>
+        <div class="dashboard__withdraw-avaliable">
+         <div class="dashboard__withdraw-avaliable-wrapper">
+          <p class="dashboard__withdraw-avaliable-title">Доступно к выводу</p>
+          <p class="dashboard__withdraw-avaliable-subtitle">
+           Лидерская программа
+          </p>
+          <p class="dashboard__withdraw-avaliable-value">$ 888,888.88</p>
+         </div>
+         <p class="dashboard__withdraw-avaliable-work">
+          Заявка будет обработанна в течении <span>24 часов</span>
+         </p>
+        </div>
+       </div>
+       <div class="dashboard__withdraw-items">
+        <div class="dashboard__withdraw-item crypt">
+         <div class="dashboard__withdraw-item-wrapper">
+          <img
+           src="./assets/icons/dashboard/usdt-icon.svg"
+           alt=""
+           class="dashboard__withdraw-item-icon"
+          />
+          <div class="dashboard__withdraw-item-texts">
+           <p class="dashboard__withdraw-item-title">Криптовалюта</p>
+           <p class="dashboard__withdraw-item-subtitle">
+            Создать депозит через криптовалюту
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="dashboard__more">
+       <div class="dashboard__more-top">
+        <p class="dashboard__more-top-name">Подробнее</p>
+        <img
+         src="./assets/icons/dashboard/dropdown-icon.svg"
+         alt=""
+         class="dashboard__more-dropdown-icon"
+        />
+       </div>
+       <div class="dashboard__more-dropdown-menu">
+        <div class="dashboard__more-card">
+         <h2 class="dashboard__more-title">Условия вывода</h2>
+         <div class="dashboard__more-texts">
+          <p class="dashboard__more-text">
+           Вывод дохода от партнерской программы производится на ваш
+           <span>личный кошелек</span>
+          </p>
+          <p class="dashboard__more-text">
+           Минимальная сумма вывода составляет
+           <span>5 USDT</span>
+          </p>
+          <p class="dashboard__more-text">
+           Вывод можно оформить
+           <span>в любой день</span>
+          </p>
+          <p class="dashboard__more-text">
+           Cумма будет перечислена на ваш кошелек
+           <span>в понедельник</span>
+          </p>
+          <p class="dashboard__more-text">
+           Платформа не берет комиссию за вывод, пользователь оплачивает только
+           <span>комиссию сети TRC20 - (~4-8 USDT) BEP20 - (~0,1 USDT)</span>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <script src="./js/dashboard/withdraw/withdraw.js"></script>
+  <script src="./js/dashboard/more/more.js"></script>
+  <script src="./js/dashboard/input/input.js"></script>
+  <script src="./js/dashboard/withdraw/withdraw-crypt.js"></script>
+ </body>
+</html>

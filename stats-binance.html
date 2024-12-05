@@ -6,8 +6,10 @@
   <title>Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-   href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+   href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
    rel="stylesheet"
   />
   <link rel="stylesheet" href="./styles/scss/style.css" />
@@ -22,16 +24,19 @@
   <section class="dashboard">
    <div class="dashboard__container">
     <div class="dashboard__wrapper">
+     <div class="dashboard__header-tabs">
+      <div class="dashboard__header-tab active">
+       <p class="dashboard__header-tab-name">Статистика торговли</p>
+      </div>
+      <div class="dashboard__header-tab">
+       <p class="dashboard__header-tab-name">История сделок</p>
+      </div>
+     </div>
      <div class="dashboard__slider splide">
       <div class="dashboard__slider-container splide__track">
        <div class="dashboard__slider-wrapper splide__list">
         <div class="dashboard__slide-item splide__slide active">
-         <a href="dashboard.html">
-          <p class="dashboard__slide-name">Дашборд</p>
-         </a>
-        </div>
-        <div class="dashboard__slide-item splide__slide">
-         <a href="dashboard-binance.html">
+         <a href="stats-binance.html">
           <svg
            width="54"
            height="44"
@@ -88,7 +93,7 @@
          </a>
         </div>
         <div class="dashboard__slide-item splide__slide">
-         <a href="dashboard-btc.html">
+         <a href="stats-btc.html">
           <img
            src="./assets/icons/dashboard/btc.svg"
            alt=""
@@ -156,359 +161,125 @@
       </div>
      </div>
      <div class="dashboard__content">
-      <div class="dashboard__info dash-1000">
-       <div class="dashboard__cards">
-        <div class="dashboard__card">
-         <div class="dashboard__card-content">
-          <div class="dashboard__card-info">
-           <p class="dashboard__card-info-title">Общий депозит</p>
-           <div class="dashboard__card-wallet">
+      <div class="dashboard__stats">
+       <div class="dashboard__stats-items">
+        <div class="dashboard__stats-item">
+         <div class="dashboard__stats-item-wrapper">
+          <div class="dashboard__stats-item-info">
+           <p class="dashboard__stats-item-info-title">Общий депозит</p>
+           <div class="dashboard__stats-item-wallet">
             <img
-             src="./assets/icons/dashboard/wallet-logo.svg"
+             src="./assets/icons/dashboard/usdt-icon.svg"
              alt=""
-             class="dashboard__card-wallet-logo"
+             class="dashboard__stats-item-wallet-icon"
             />
-            <p class="dashboard__card-wallet-name">USDT</p>
+            <p class="dashboard__stats-item-wallet-name">USDT</p>
            </div>
-           <p class="dashboard__card-amount">$ 888,888.88</p>
           </div>
-          <button class="dashboard__card-button">
-           <a href="deposit.html"> Создать депозит </a>
-          </button>
+          <p class="dashboard__stats-item-amount">$ 888,888.88</p>
+         </div>
+         <div class="dashboard__stats-item-progress binance">
+          <span></span>
          </div>
         </div>
-        <div class="dashboard__card">
-         <div class="dashboard__card-content">
-          <div class="dashboard__card-info">
-           <p class="dashboard__card-info-title">Доступно к выводу</p>
-           <p class="dashboard__card-amount">$ 888,888.88</p>
-          </div>
-          <p class="dashboard__conditions" data-open="altcoins">
-           Условия вывода
-          </p>
-          <button class="dashboard__card-button">Вывод</button>
-         </div>
-        </div>
-       </div>
-       <div class="dashboard__level-profit">
-        <div class="dashboard__level-profit-info">
-         <p class="dashboard__level-profit-name">Уровень доходности</p>
-         <p class="dashboard__level-profit-level">Уровень 1</p>
-         <p class="dashboard__level-profit-value">5%</p>
-        </div>
-        <img
-         src="./assets/icons/dashboard/level-1.svg"
-         alt=""
-         class="dashboard__level-profit-logo"
-        />
-       </div>
-      </div>
-      <div class="dashboard__profit">
-       <div class="dashboard__profit-items">
-        <div class="dashboard__profit-item">
-         <div class="dashboard__profit-info">
-          <p class="dashboard__profit-info-name">Доход за сутки</p>
-          <div class="dashboard__profit-logo-wrapper">
-           <img
-            src="./assets/icons/dashboard/altcoins-profit.svg"
-            alt=""
-            class="dashboard__profit-logo altcoins"
-           />
-          </div>
-          <p class="dashboard__profit-amount">$ 888,888.88</p>
-         </div>
-         <div class="dashboard__profit-result plus">+0,888%</div>
-        </div>
-        <div class="dashboard__profit-item">
-         <div class="dashboard__profit-info">
-          <p class="dashboard__profit-info-name">Доход за сутки</p>
-          <div class="dashboard__profit-logo-wrapper">
-           <img
-            src="./assets/icons/dashboard/btc-profit.svg"
-            alt=""
-            class="dashboard__profit-logo btc"
-           />
-           <p class="dashboard__profit-logo-name">BTC/ETH</p>
-          </div>
-          <p class="dashboard__profit-amount">$ 888,888.88</p>
-         </div>
-         <div class="dashboard__profit-result plus">+0,888%</div>
-        </div>
-       </div>
-      </div>
-      <div class="dashboard__partner">
-       <div class="dashboard__partner-info">
-        <p class="dashboard__partner-subtitle">Доступно к выводу</p>
-        <p class="dashboard__partner-title">Партнерская программа</p>
-        <p class="dashboard__partner-amount">$ 0</p>
-       </div>
-       <p class="dashboard__conditions" data-open="partner">Условия вывода</p>
-       <button class="dashboard__partner-button">
-        <a href="withdraw-partner.html"> Вывод </a>
-       </button>
-      </div>
-      <div class="dashboard__info btc">
-       <div class="dashboard__cards">
-        <div class="dashboard__card">
-         <div class="dashboard__card-content">
-          <div class="dashboard__card-info">
-           <p class="dashboard__card-info-title">Общий депозит</p>
-           <div class="dashboard__card-wallet">
+        <div class="dashboard__stats-item">
+         <div class="dashboard__stats-item-wrapper">
+          <div class="dashboard__stats-item-info">
+           <p class="dashboard__stats-item-info-title">Всего заработано</p>
+           <div class="dashboard__stats-item-wallet">
             <img
-             src="./assets/icons/dashboard/wallet-logo.svg"
+             src="./assets/icons/dashboard/usdt-icon.svg"
              alt=""
-             class="dashboard__card-wallet-logo"
+             class="dashboard__stats-item-wallet-icon"
             />
-            <p class="dashboard__card-wallet-name">USDT</p>
+            <p class="dashboard__stats-item-wallet-name">USDT</p>
            </div>
-           <p class="dashboard__card-amount">$ 888,888.88</p>
           </div>
-          <button class="dashboard__card-button">
-           <a href="deposit-btc.html"> Создать депозит </a>
-          </button>
+          <p class="dashboard__stats-item-amount">$ 888,888.88</p>
+         </div>
+         <div class="dashboard__stats-item-progress binance">
+          <span></span>
          </div>
         </div>
-        <div class="dashboard__card">
-         <div class="dashboard__card-content">
-          <div class="dashboard__card-info">
-           <p class="dashboard__card-info-title">Доступно к выводу</p>
-           <p class="dashboard__card-amount">$ 888,888.88</p>
+        <div class="dashboard__stats-item">
+         <div class="dashboard__stats-item-wrapper">
+          <div class="dashboard__stats-item-info">
+           <p class="dashboard__stats-item-info-title">Всего выведено</p>
+           <div class="dashboard__stats-item-wallet">
+            <img
+             src="./assets/icons/dashboard/usdt-icon.svg"
+             alt=""
+             class="dashboard__stats-item-wallet-icon"
+            />
+            <p class="dashboard__stats-item-wallet-name">USDT</p>
+           </div>
           </div>
-          <p class="dashboard__conditions" data-open="btc">Условия вывода</p>
-          <button class="dashboard__card-button">
-           <a href="withdraw-btc.html"> Вывод </a>
-          </button>
+          <p class="dashboard__stats-item-amount">$ 888,888.88</p>
+         </div>
+         <div class="dashboard__stats-item-progress binance">
+          <span></span>
          </div>
         </div>
-       </div>
-       <div class="dashboard__level-profit">
-        <div class="dashboard__level-profit-info">
-         <p class="dashboard__level-profit-name">Уровень доходности</p>
-         <p class="dashboard__level-profit-level">Уровень 1</p>
-         <p class="dashboard__level-profit-value">20%</p>
-        </div>
-        <img
-         src="./assets/icons/dashboard/btc-level-profit.svg"
-         alt=""
-         class="dashboard__level-profit-logo btc"
-        />
        </div>
       </div>
      </div>
     </div>
-    <div class="dashboard__dropdown-items">
-     <div class="dashboard__dropdown">
-      <p class="dashboard__dropdown-name">Депозиты Altcoins</p>
-
-      <div class="dashboard__dropdown-menu">
-       <div class="dashboard__deposit">
-        <div class="dashboard__renew">
-         <p class="dashboard__renew-title">Авто-продление</p>
-         <div class="dashboard__renew-button-wrapper">
-          <button class="dashboard__renew-button" />
-         </div>
-        </div>
-        <div class="dashboard__deposit-info">
-         <div class="dashboard__deposit-info-top">
-          <div class="dashboard__deposit-info-col">
-           <p class="dashboard__deposit-info-col-title">Дата пополнения</p>
-           <div class="dashboard__deposit-info-col-dates">
-            <p class="dashboard__deposit-info-col-date">14-12-23</p>
-            <p class="dashboard__deposit-info-col-date">14:05:00</p>
-           </div>
-          </div>
-          <div class="dashboard__deposit-info-col">
-           <p class="dashboard__deposit-info-col-title">Старт торговли</p>
-           <div class="dashboard__deposit-info-col-dates">
-            <p class="dashboard__deposit-info-col-date">14-12-23</p>
-            <p class="dashboard__deposit-info-col-date">14:05:00</p>
-           </div>
-          </div>
-         </div>
-         <div class="dashboard__deposit-info-bottom">
-          <div class="dashboard__deposit-info-col">
-           <p class="dashboard__deposit-info-col-title">Сумма</p>
-           <p class="dashboard__deposit-info-col-value">$ 888,888.88</p>
-          </div>
-          <div class="dashboard__deposit-info-col">
-           <p class="dashboard__deposit-info-col-title">Доступен вывод</p>
-           <p class="dashboard__deposit-info-col-value">14-12-23</p>
-          </div>
-         </div>
-         <div class="dashboard__deposit-buttons">
-          <button class="dashboard__deposit-button output">Вывод</button>
-          <button class="dashboard__deposit-button renew">
-           Продление на 90 дней
-          </button>
-         </div>
-        </div>
+    <div class="dashboard__stats-trades">
+     <div class="dashboard__stats-trades-items">
+      <div class="dashboard__stats-trade-item">
+       <div class="dashboard__stats-trade-item-info">
+        <p class="dashboard__stats-trade-info-title">200 сделок</p>
+        <p class="dashboard__stats-trade-info-subtitle">14-12-23</p>
+       </div>
+       <div class="dashboard__stats-trade-profit">
+        <p class="dashboard__stats-trade-profit-title binance">
+         Доход: $ 888,888.88
+        </p>
+        <p class="dashboard__stats-trade-profit-subtitle">
+         Доход за сутки: 1,57 %
+        </p>
        </div>
       </div>
-     </div>
-     <div class="dashboard__dropdown">
-      <p class="dashboard__dropdown-name">Депозиты BTC/ETН</p>
-
-      <div class="dashboard__dropdown-menu">
-       <div class="dashboard__deposit">
-        <div class="dashboard__renew">
-         <p class="dashboard__renew-title">Авто-продление</p>
-         <div class="dashboard__renew-button-wrapper">
-          <button class="dashboard__renew-button" />
-         </div>
-        </div>
-        <div class="dashboard__deposit-info">
-         <div class="dashboard__deposit-info-top">
-          <div class="dashboard__deposit-info-col">
-           <p class="dashboard__deposit-info-col-title">Дата пополнения</p>
-           <div class="dashboard__deposit-info-col-dates">
-            <p class="dashboard__deposit-info-col-date">14-12-23</p>
-            <p class="dashboard__deposit-info-col-date">14:05:00</p>
-           </div>
-          </div>
-          <div class="dashboard__deposit-info-col">
-           <p class="dashboard__deposit-info-col-title">Старт торговли</p>
-           <div class="dashboard__deposit-info-col-dates">
-            <p class="dashboard__deposit-info-col-date">14-12-23</p>
-            <p class="dashboard__deposit-info-col-date">14:05:00</p>
-           </div>
-          </div>
-         </div>
-         <div class="dashboard__deposit-info-bottom">
-          <div class="dashboard__deposit-info-col">
-           <p class="dashboard__deposit-info-col-title">Сумма</p>
-           <p class="dashboard__deposit-info-col-value">$ 888,888.88</p>
-          </div>
-          <div class="dashboard__deposit-info-col">
-           <p class="dashboard__deposit-info-col-title">Доступен вывод</p>
-           <p class="dashboard__deposit-info-col-value">14-12-23</p>
-          </div>
-         </div>
-         <div class="dashboard__deposit-buttons">
-          <button class="dashboard__deposit-button output">Вывод</button>
-          <button class="dashboard__deposit-button renew">
-           Продление на 90 дней
-          </button>
-         </div>
-        </div>
+      <div class="dashboard__stats-trade-item">
+       <div class="dashboard__stats-trade-item-info">
+        <p class="dashboard__stats-trade-info-title">200 сделок</p>
+        <p class="dashboard__stats-trade-info-subtitle">14-12-23</p>
+       </div>
+       <div class="dashboard__stats-trade-profit">
+        <p class="dashboard__stats-trade-profit-title binance">
+         Доход: $ 888,888.88
+        </p>
+        <p class="dashboard__stats-trade-profit-subtitle">
+         Доход за сутки: 1,57 %
+        </p>
        </div>
       </div>
-     </div>
-     <div class="dashboard__dropdown">
-      <p class="dashboard__dropdown-name">История операций</p>
-
-      <div class="dashboard__dropdown-menu">
-       <div class="dashboard__history-operations">
-        <div class="dashboard__history-operation">
-         <div class="dashboard__history-operation-info">
-          <p class="dashboard__history-operation-total">Всего</p>
-          <div class="dashboard__history-operation-name-wrapper green">
-           <img
-            src="./assets/icons/dashboard/input-icon.svg"
-            alt=""
-            class="dashboard__history-operation-icon"
-           />
-           <p class="dashboard__history-operation-name">Ввод</p>
-          </div>
-         </div>
-         <p class="dashboard__history-operation-amount">$ 888,888.88</p>
-        </div>
-        <div class="dashboard__history-operation">
-         <div class="dashboard__history-operation-info">
-          <p class="dashboard__history-operation-total">Всего</p>
-          <div class="dashboard__history-operation-name-wrapper red">
-           <img
-            src="./assets/icons/dashboard/output-icon.svg"
-            alt=""
-            class="dashboard__history-operation-icon"
-           />
-           <p class="dashboard__history-operation-name">Вывод</p>
-           <p class="dashboard__history-operation-output">Трейдинг</p>
-          </div>
-         </div>
-         <p class="dashboard__history-operation-amount">$ 888,888.88</p>
-        </div>
-        <div class="dashboard__history-operation">
-         <div class="dashboard__history-operation-info">
-          <p class="dashboard__history-operation-total">Всего</p>
-          <div class="dashboard__history-operation-name-wrapper red">
-           <img
-            src="./assets/icons/dashboard/output-icon.svg"
-            alt=""
-            class="dashboard__history-operation-icon"
-           />
-           <p class="dashboard__history-operation-name">Вывод</p>
-           <p class="dashboard__history-operation-output">
-            Партнерская программа
-           </p>
-          </div>
-         </div>
-         <p class="dashboard__history-operation-amount">$ 888,888.88</p>
-        </div>
+      <div class="dashboard__stats-trade-item">
+       <div class="dashboard__stats-trade-item-info">
+        <p class="dashboard__stats-trade-info-title">200 сделок</p>
+        <p class="dashboard__stats-trade-info-subtitle">14-12-23</p>
        </div>
-       <div class="dashboard__history-transactions">
-        <div class="dashboard__history-transaction">
-         <div class="dashboard__history-transaction-wrapper">
-          <img
-           src="./assets/icons/home/transaction-progress.svg"
-           alt=""
-           class="dashboard__history-transaction-icon"
-          />
-          <div class="dashboard__history-transaction-operation">
-           <p class="dashboard__history-transaction-operation-name">
-            <span>Ввод:</span> Партнерская Программа
-           </p>
-           <p class="dashboard__history-transaction-date">14-12-23 14:05:00</p>
-          </div>
-         </div>
-         <div class="dashboard__history-transaction-result">
-          <p class="dashboard__history-transaction-amount">$ 888,888.88</p>
-          <p class="dashboard__history-transaction-status in-progress">
-           В обработке
-          </p>
-         </div>
-        </div>
-        <div class="dashboard__history-transaction">
-         <div class="dashboard__history-transaction-wrapper">
-          <img
-           src="./assets/icons/home/transaction-completed.svg"
-           alt=""
-           class="dashboard__history-transaction-icon"
-          />
-          <div class="dashboard__history-transaction-operation">
-           <p class="dashboard__history-transaction-operation-name">
-            <span>Вывод:</span> Трейдинг
-           </p>
-           <p class="dashboard__history-transaction-date">14-12-23 14:05:00</p>
-          </div>
-         </div>
-         <div class="dashboard__history-transaction-result">
-          <p class="dashboard__history-transaction-amount">$ 888,888.88</p>
-          <p class="dashboard__history-transaction-status completed">
-           Исполнен
-          </p>
-         </div>
-        </div>
-        <div class="dashboard__history-transaction">
-         <div class="dashboard__history-transaction-wrapper">
-          <img
-           src="./assets/icons/home/transaction-progress.svg"
-           alt=""
-           class="dashboard__history-transaction-icon"
-          />
-          <div class="dashboard__history-transaction-operation">
-           <p class="dashboard__history-transaction-operation-name">
-            <span>Ввод:</span> Партнерская Программа
-           </p>
-           <p class="dashboard__history-transaction-date">14-12-23 14:05:00</p>
-          </div>
-         </div>
-         <div class="dashboard__history-transaction-result">
-          <p class="dashboard__history-transaction-amount">$ 888,888.88</p>
-          <p class="dashboard__history-transaction-status failed">
-           Недостаточно средств
-          </p>
-         </div>
-        </div>
+       <div class="dashboard__stats-trade-profit">
+        <p class="dashboard__stats-trade-profit-title binance">
+         Доход: $ 888,888.88
+        </p>
+        <p class="dashboard__stats-trade-profit-subtitle">
+         Доход за сутки: 1,57 %
+        </p>
+       </div>
+      </div>
+      <div class="dashboard__stats-trade-item">
+       <div class="dashboard__stats-trade-item-info">
+        <p class="dashboard__stats-trade-info-title">200 сделок</p>
+        <p class="dashboard__stats-trade-info-subtitle">14-12-23</p>
+       </div>
+       <div class="dashboard__stats-trade-profit">
+        <p class="dashboard__stats-trade-profit-title binance">
+         Доход: $ 888,888.88
+        </p>
+        <p class="dashboard__stats-trade-profit-subtitle">
+         Доход за сутки: 1,57 %
+        </p>
        </div>
       </div>
      </div>
@@ -519,8 +290,5 @@
   https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
   "></script>
   <script src="./js/slider/dashboard/dashslider.js"></script>
-  <script src="./js/dashboard/renew/renew.js"></script>
-  <script src="./js/dashboard/popup/popup.js"></script>
-  <script src="./js/dashboard/dropdown/dropdown.js"></script>
  </body>
 </html>

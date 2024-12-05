@@ -264,143 +264,159 @@ const renderLevel = ({ level, profit, img }) => {
  </div>`;
 };
 
-const renderTasks = (tasks) => {
- const dashboardProgress = document.querySelector('.dashboard__level-progress');
- tasks.forEach((task, index) => {
-  const progressWrapper = document.createElement('div');
-  progressWrapper.className = 'dashboard__level-progress-wrapper';
-  dashboardProgress.append(progressWrapper);
-  const progressWrappers = document.querySelectorAll(
-   '.dashboard__level-progress-wrapper'
+const renderTasks = (level, tasks) => {
+ const tasksWrapper = document.querySelector('.dashboard__level-tasks');
+ if (level.level != 12) {
+  tasksWrapper.classList.remove('completed');
+  tasksWrapper.innerHTML = `        <p class="dashboard__level-tasks-title">Задания</p>
+           <div class="dashboard__level-progress"></div>`;
+  const dashboardProgress = tasksWrapper.querySelector(
+   '.dashboard__level-progress'
   );
 
-  switch (index) {
-   case 0: {
-    const currentWrapper = progressWrappers[index];
-    currentWrapper.innerHTML = '';
-    currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
-    <div class="dashboard__level-progress-title-wrapper">
-     <p class="dashboard__level-progress-title">Количество партнеров</p>
-    </div>
-    <div class="dashboard__level-progress-amount-wrapper">
-     <p class="dashboard__level-progress-amount ${
-      task.partners == task.maxpartners ? 'completed' : ''
-     }">${task.partners}/${task.maxpartners}</p>
-     <img
-      src="./assets/icons/dashboard/usdt-icon.svg"
-      alt=""
-      class="dashboard__level-progress-wallet-icon"
-     />
-    </div>
-   </div>
-   <div class="dashboard__level-progress-bar">
-    <div class="dashboard__level-progress-bar-wrapper">
-     <span></span>
-    </div>
-   </div>`;
+  tasks.forEach((task, index) => {
+   const progressWrapper = document.createElement('div');
+   progressWrapper.className = 'dashboard__level-progress-wrapper';
+   dashboardProgress.append(progressWrapper);
+   const progressWrappers = document.querySelectorAll(
+    '.dashboard__level-progress-wrapper'
+   );
 
-    const progressBar = currentWrapper.querySelector(
-     '.dashboard__level-progress-bar-wrapper'
-    );
-    progressBar.style.width = defPercent(task.partners, task.maxpartners);
+   switch (index) {
+    case 0: {
+     const currentWrapper = progressWrappers[index];
+     currentWrapper.innerHTML = '';
+     currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
+               <div class="dashboard__level-progress-title-wrapper">
+                <p class="dashboard__level-progress-title">Количество партнеров</p>
+               </div>
+               <div class="dashboard__level-progress-amount-wrapper">
+                <p class="dashboard__level-progress-amount ${
+                 task.partners == task.maxpartners ? 'completed' : ''
+                }">${task.partners}/${task.maxpartners}</p>
+                <img
+                 src="./assets/icons/dashboard/usdt-icon.svg"
+                 alt=""
+                 class="dashboard__level-progress-wallet-icon"
+                />
+               </div>
+              </div>
+              <div class="dashboard__level-progress-bar">
+               <div class="dashboard__level-progress-bar-wrapper">
+                <span></span>
+               </div>
+              </div>`;
 
-    break;
+     const progressBar = currentWrapper.querySelector(
+      '.dashboard__level-progress-bar-wrapper'
+     );
+     progressBar.style.width = defPercent(task.partners, task.maxpartners);
+
+     break;
+    }
+    case 1: {
+     const currentWrapper = progressWrappers[index];
+     currentWrapper.innerHTML = '';
+     currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
+               <div class="dashboard__level-progress-title-wrapper">
+               <p class="dashboard__level-progress-title">Сумма депозитов</p>
+               <img
+               src="./assets/icons/dashboard/usdt-icon.svg"
+               alt=""
+               class="dashboard__level-progress-wallet-icon"
+              />
+               </div>
+               <div class="dashboard__level-progress-amount-wrapper">
+                <p class="dashboard__level-progress-amount ${
+                 task.deposit == task.maxdeposit ? 'completed' : ''
+                }">${task.deposit}/${task.maxdeposit}</p>
+                <img
+                 src="./assets/icons/dashboard/usdt-icon.svg"
+                 alt=""
+                 class="dashboard__level-progress-wallet-icon"
+                />
+               </div>
+              </div>
+              <div class="dashboard__level-progress-bar">
+               <div class="dashboard__level-progress-bar-wrapper">
+                <span></span>
+               </div>
+              </div>`;
+     const progressBar = currentWrapper.querySelector(
+      '.dashboard__level-progress-bar-wrapper'
+     );
+     progressBar.style.width = defPercent(task.deposit, task.maxdeposit);
+     break;
+    }
+    case 2: {
+     const currentWrapper = progressWrappers[index];
+     currentWrapper.innerHTML = '';
+     currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
+               <div class="dashboard__level-progress-title-wrapper">
+               <p class="dashboard__level-progress-title">Лидер в 1 линии уровня</p>
+               <img
+               src="./assets/icons/dashboard/level-${currentLevel.level}.svg"
+               alt=""
+               class="dashboard__level-progress-wallet-icon"
+              />
+              <span>${currentLevel.level}</span>
+               </div>
+               <div class="dashboard__level-progress-amount-wrapper">
+                <p class="dashboard__level-progress-amount ${
+                 task.leader == task.maxleader ? 'completed' : ''
+                }">${task.leader}/${task.maxleader}</p>
+               </div>
+              </div>
+              <div class="dashboard__level-progress-bar">
+               <div class="dashboard__level-progress-bar-wrapper">
+                <span></span>
+               </div>
+              </div>`;
+     const progressBar = currentWrapper.querySelector(
+      '.dashboard__level-progress-bar-wrapper'
+     );
+     progressBar.style.width = defPercent(task.leader, task.maxleader);
+     break;
+    }
+    case 3: {
+     console.log(task);
+     const currentWrapper = progressWrappers[index];
+     currentWrapper.innerHTML = '';
+     currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
+               <div class="dashboard__level-progress-title-wrapper">
+               <p class="dashboard__level-progress-title">Бонус к депозиту</p>
+               <img
+               src="./assets/icons/dashboard/usdt-icon.svg"
+               alt=""
+               class="dashboard__level-progress-wallet-icon"
+              />
+               </div>
+               <div class="dashboard__level-progress-amount-wrapper">
+                <p class="dashboard__level-progress-amount completed">${task.bonus}</p>
+                <img
+                 src="./assets/icons/dashboard/usdt-icon.svg"
+                 alt=""
+                 class="dashboard__level-progress-wallet-icon"
+                />
+               </div>
+              </div>
+              <div class="dashboard__level-progress-bar">
+               <div class="dashboard__level-progress-bar-wrapper">
+                <span></span>
+               </div>
+              </div>`;
+     break;
+    }
    }
-   case 1: {
-    const currentWrapper = progressWrappers[index];
-    currentWrapper.innerHTML = '';
-    currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
-    <div class="dashboard__level-progress-title-wrapper">
-    <p class="dashboard__level-progress-title">Сумма депозитов</p>
-    <img
-    src="./assets/icons/dashboard/usdt-icon.svg"
-    alt=""
-    class="dashboard__level-progress-wallet-icon"
-   />
-    </div>
-    <div class="dashboard__level-progress-amount-wrapper">
-     <p class="dashboard__level-progress-amount ${
-      task.deposit == task.maxdeposit ? 'completed' : ''
-     }">${task.deposit}/${task.maxdeposit}</p>
-     <img
-      src="./assets/icons/dashboard/usdt-icon.svg"
-      alt=""
-      class="dashboard__level-progress-wallet-icon"
-     />
-    </div>
-   </div>
-   <div class="dashboard__level-progress-bar">
-    <div class="dashboard__level-progress-bar-wrapper">
-     <span></span>
-    </div>
-   </div>`;
-    const progressBar = currentWrapper.querySelector(
-     '.dashboard__level-progress-bar-wrapper'
-    );
-    progressBar.style.width = defPercent(task.deposit, task.maxdeposit);
-    break;
-   }
-   case 2: {
-    const currentWrapper = progressWrappers[index];
-    currentWrapper.innerHTML = '';
-    currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
-    <div class="dashboard__level-progress-title-wrapper">
-    <p class="dashboard__level-progress-title">Лидер в 1 линии уровня</p>
-    <img
-    src="./assets/icons/dashboard/level-${currentLevel.level}.svg"
-    alt=""
-    class="dashboard__level-progress-wallet-icon"
-   />
-   <span>${currentLevel.level}</span>
-    </div>
-    <div class="dashboard__level-progress-amount-wrapper">
-     <p class="dashboard__level-progress-amount ${
-      task.leader == task.maxleader ? 'completed' : ''
-     }">${task.leader}/${task.maxleader}</p>
-    </div>
-   </div>
-   <div class="dashboard__level-progress-bar">
-    <div class="dashboard__level-progress-bar-wrapper">
-     <span></span>
-    </div>
-   </div>`;
-    const progressBar = currentWrapper.querySelector(
-     '.dashboard__level-progress-bar-wrapper'
-    );
-    progressBar.style.width = defPercent(task.leader, task.maxleader);
-    break;
-   }
-   case 3: {
-    console.log(task);
-    const currentWrapper = progressWrappers[index];
-    currentWrapper.innerHTML = '';
-    currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">
-    <div class="dashboard__level-progress-title-wrapper">
-    <p class="dashboard__level-progress-title">Бонус к депозиту</p>
-    <img
-    src="./assets/icons/dashboard/usdt-icon.svg"
-    alt=""
-    class="dashboard__level-progress-wallet-icon"
-   />
-    </div>
-    <div class="dashboard__level-progress-amount-wrapper">
-     <p class="dashboard__level-progress-amount completed">${task.bonus}</p>
-     <img
-      src="./assets/icons/dashboard/usdt-icon.svg"
-      alt=""
-      class="dashboard__level-progress-wallet-icon"
-     />
-    </div>
-   </div>
-   <div class="dashboard__level-progress-bar">
-    <div class="dashboard__level-progress-bar-wrapper">
-     <span></span>
-    </div>
-   </div>`;
-    break;
-   }
-  }
- });
+  });
+ } else {
+  tasksWrapper.classList.add('completed');
+  tasksWrapper.innerHTML = `        <div class="dashboard__level-completed">
+<p class="dashboard__level-completed-title">Поздравляем!</p>
+<p class="dashboard__level-completed-subtitle">«Теперь ты знаешь насколько 
+    глубока кроличья нора»</p>
+</div>`;
+ }
 };
 
 renderLevel(currentLevel);
@@ -410,12 +426,9 @@ levelSlides.forEach((slide, index) => {
   currentLevel = levels[index - 2];
   levelTasks = currentLevel.tasks;
   renderLevel(currentLevel);
-  const dashboardProgress = document.querySelector(
-   '.dashboard__level-progress'
-  );
-  dashboardProgress.innerHTML = '';
-  renderTasks(levelTasks);
+
+  renderTasks(currentLevel, levelTasks);
  });
 });
 
-renderTasks(levelTasks);
+renderTasks(currentLevel, levelTasks);
