@@ -1,6 +1,11 @@
 const initCrypt = () => {
  let way = 0;
 
+ const isValidBitcoinAddress = (address) => {
+  const ethereumAddressRegex = /^0x[a-fA-F0-9]{40}$/;
+  return ethereumAddressRegex.test(address);
+ };
+
  const withdrawItemsWrapper = document.querySelector(
   '.dashboard__withdraw-items'
  );
@@ -122,10 +127,12 @@ const initCrypt = () => {
    const withdrawFormWrapper = document.createElement('div');
    withdrawFormWrapper.className = 'dashboard__withdraw-input-form';
    withdrawFormWrapper.innerHTML = `        <form action="" class="dashboard__withdraw-form">
-        <div class="dashboard__withdraw-input-wrapper">
-         <input type="text" class="dashboard__withdraw-input" />
-         <span class="dashboard__withdraw-placeholder">Адрес</span>
-        </div>
+   <div class='dashboard__withdraw-input-container'>
+   <div class="dashboard__withdraw-input-wrapper">
+    <input type="text" class="dashboard__withdraw-input" />
+    <span class="dashboard__withdraw-placeholder">Адрес</span>
+   </div>
+   </div>
         <button class="dashboard__withdraw-form-button">Далее</button>
         </form>`;
    const withdrawForm = withdrawFormWrapper.querySelector(
@@ -134,20 +141,47 @@ const initCrypt = () => {
    const withdrawInputWrapper = withdrawFormWrapper.querySelector(
     '.dashboard__withdraw-input-wrapper'
    );
+   const withdrawInputContainer = withdrawForm.querySelector(
+    '.dashboard__withdraw-input-container'
+   );
    const withdrawInput = withdrawForm.querySelector(
     '.dashboard__withdraw-input'
    );
-   withdrawInput.addEventListener('input', () =>
-    focusInput(withdrawInput, withdrawInputWrapper)
-   );
+   withdrawInput.addEventListener('input', () => {
+    if (isValidBitcoinAddress(withdrawInput.value)) {
+     if (withdrawInputContainer.classList.contains('invalid')) {
+      withdrawInputContainer.classList.remove('invalid');
+     }
+     withdrawInputContainer.classList.add('valid');
+
+     const existingError = withdrawInputWrapper.querySelector('.error-message');
+     if (existingError) {
+      existingError.remove();
+     }
+    } else {
+     if (withdrawInputContainer.classList.contains('valid')) {
+      withdrawInputContainer.classList.remove('valid');
+     }
+    }
+
+    focusInput(withdrawInput, withdrawInputWrapper);
+   });
 
    withdrawForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (
-     withdrawInput.value == 'https://ziontrade.pro/?invite=GKEAXaHlkN04NmEy'
-    ) {
+    const existingError = withdrawInputWrapper.querySelector('.error-message');
+    if (existingError) {
+     existingError.remove();
+    }
+    if (isValidBitcoinAddress(withdrawInput.value)) {
      way++;
      changeWay(way);
+    } else {
+     withdrawInputContainer.classList.add('invalid');
+     const spanError = document.createElement('span');
+     spanError.textContent = 'Неверный адрес';
+     spanError.className = 'error-message';
+     withdrawInputWrapper.append(spanError);
     }
    });
 

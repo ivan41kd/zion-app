@@ -1,5 +1,4 @@
 const initBank = () => {
- console.log('da');
  let initway = 0;
 
  const withdrawItemsWrapper = document.querySelector(
@@ -71,7 +70,6 @@ const initBank = () => {
                </div>
 `;
   } else if (way == 1) {
-   console.log(way);
    withdrawTitle.textContent = 'Введите номер карты';
    withdrawAvaliable.style.display = 'none';
    withdrawItemsWrapper.remove();
@@ -108,7 +106,6 @@ const initBank = () => {
    withdrawForm.append(more);
    withdrawPage.append(withdrawFormWrapper);
   } else if (way == 2) {
-   console.log(way);
    const existWithDraw = document.querySelector(
     '.dashboard__withdraw-input-form'
    );
@@ -494,7 +491,6 @@ const initBank = () => {
 
   withdrawItems.forEach((item) => {
    item.addEventListener('click', () => {
-    console.log(initway++);
     changeWay(initway);
    });
   });

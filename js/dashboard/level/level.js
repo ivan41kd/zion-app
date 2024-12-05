@@ -382,7 +382,6 @@ const renderTasks = (level, tasks) => {
      break;
     }
     case 3: {
-     console.log(task);
      const currentWrapper = progressWrappers[index];
      currentWrapper.innerHTML = '';
      currentWrapper.innerHTML = `<div class="dashboard__level-progress-top-wrapper">

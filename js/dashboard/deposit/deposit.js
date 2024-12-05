@@ -4,5 +4,4 @@ const depositItem = document.querySelector(
 
 depositItem.addEventListener('click', () => {
  initDeposit();
- console.log('da');
 });

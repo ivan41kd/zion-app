@@ -167,7 +167,6 @@ const initDeposit = () => {
    item.addEventListener('click', () => {
     way++;
     changeWay(way + 1);
-    console.log(way + 1);
    });
   });
  };
