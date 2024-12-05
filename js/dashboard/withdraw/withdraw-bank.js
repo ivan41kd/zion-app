@@ -313,7 +313,7 @@ const initBank = () => {
    );
    withdrawInput.addEventListener('input', () => {
     focusInput(withdrawInput, withdrawInputWrapper);
-    if (withdrawInput.value >= 20) {
+    if (withdrawInput.value >= 5) {
      if (withdrawInputContainer.classList.contains('invalid')) {
       withdrawInputContainer.classList.remove('invalid');
      }
@@ -337,7 +337,7 @@ const initBank = () => {
      existingError.remove();
     }
 
-    if (Number(withdrawInput.value) >= 20) {
+    if (Number(withdrawInput.value) >= 5) {
      way++;
      initway = way;
      changeWay(way);
