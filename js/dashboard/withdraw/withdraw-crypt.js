@@ -214,7 +214,7 @@ const initCrypt = () => {
      existingError.remove();
     }
 
-    if (Number(withdrawInput.value) >= 20) {
+    if (Number(withdrawInput.value) >= 5) {
      way++;
      changeWay(way);
     } else {

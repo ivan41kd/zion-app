@@ -237,15 +237,18 @@ const levels = [
 let currentLevel = levels[0];
 let levelTasks = currentLevel.tasks;
 const levelSlides = document.querySelectorAll('.dashboard__progress-slide');
+const linkIcon = document.querySelector('.dashboard__invite-link-icon');
+const linkCol = document.querySelector('.dashboard__invite-link-col.link');
+const linkColFirst = document.querySelector('.dashboard__invite-link-col');
 
-function defPercent(value, value2) {
+const defPercent = (value, value2) => {
  let percent = (value / value2) * 100;
 
  if ('Infinity' == percent) effect17.value = 'Неопределено';
  else if (percent == 0) return 5 + '%';
  else if (percent < 10) return 5 + '%';
  else return percent + '%';
-}
+};
 const renderLevel = ({ level, profit, img }) => {
  const dashboardLevel = document.querySelector('.dashboard__level');
  dashboardLevel.className = `dashboard__level level-${level}`;
@@ -419,6 +422,11 @@ const renderTasks = (level, tasks) => {
  }
 };
 
+const copyLink = (link) => {
+ navigator.clipboard.writeText(link.textContent);
+ linkColFirst.classList.add('copied');
+};
+
 renderLevel(currentLevel);
 
 levelSlides.forEach((slide, index) => {
@@ -432,3 +440,5 @@ levelSlides.forEach((slide, index) => {
 });
 
 renderTasks(currentLevel, levelTasks);
+
+linkIcon.addEventListener('click', () => copyLink(linkCol));
