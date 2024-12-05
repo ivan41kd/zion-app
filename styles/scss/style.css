@@ -4217,11 +4217,6 @@ input[type=number] {
 .dashboard__withdraw.btc .dashboard__withdraw-end-button {
   background: linear-gradient(263.88deg, #627eea 30.91%, #ff9416 66.42%);
 }
-@media screen and (max-width: 768px) {
-  .dashboard__renew-button {
-    width: 0px;
-  }
-}
 
 .popup {
   position: fixed;
