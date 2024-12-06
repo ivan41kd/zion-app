@@ -1,0 +1,116 @@
+.start {
+ padding-top: 53px;
+ padding-bottom: 50px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+ &__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  padding: 0 13px;
+  row-gap: 59px;
+ }
+ &__intro {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  text-align: center;
+ }
+ &__intro-img {
+  max-width: 300px;
+  height: 52px;
+ }
+ &__intro-subtitle {
+  font-size: 15px;
+  line-height: 16.37px;
+  font-weight: 700;
+  background: linear-gradient(93.41deg, #ddc081 22.48%, #5f976e 79.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ &__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+ }
+ &__invite {
+  background: rgba(44, 44, 46, 1);
+  border-radius: 15px;
+  padding: 12.5px 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+ }
+ &__invite-input-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: rgba(133, 133, 135, 1);
+  margin-bottom: 0px;
+ }
+ &__invite-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(133, 133, 135, 1);
+  outline: none;
+  font-size: 15px;
+  line-height: 16.37px;
+  color: white;
+  font-weight: 400;
+ }
+ &__invite-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+ }
+ &__invite-save-button,
+ &__invite-skip-button {
+  background: linear-gradient(93.41deg, #ddc081 22.48%, #5f976e 79.18%);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 0;
+  cursor: pointer;
+ }
+ &__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+ }
+ &__info-text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 14.19px;
+  text-align: center;
+ }
+ &__info-level {
+  background: rgba(44, 44, 46, 1);
+  padding: 20px;
+  border-radius: 15px;
+ }
+ &__info-level-wrapper {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+ }
+ &__info-level-icon {
+  width: 58px;
+  height: auto;
+ }
+ &__info-level-values {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+ }
+ &__info-level-title {
+  font-size: 18px;
+  line-height: 21.94px;
+  font-weight: 600;
+ }
+}
