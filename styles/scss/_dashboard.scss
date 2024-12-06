@@ -1,5 +1,6 @@
 .dashboard {
  padding-top: rem(53px);
+
  &__wrapper {
   display: flex;
   flex-direction: column;
@@ -80,7 +81,7 @@
   display: flex;
   flex-direction: column;
   background: rgba(44, 44, 46, 1);
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   max-width: rem(168px);
   width: 100%;
@@ -141,6 +142,7 @@
   width: 100%;
   background: linear-gradient(93.41deg, #ddc081 22.48%, #5f976e 79.18%);
   cursor: pointer;
+  color: black;
  }
  &__info.btc &__card-button {
   background: linear-gradient(
@@ -165,6 +167,10 @@
   row-gap: rem(5px);
   position: relative;
   z-index: 2;
+ }
+ &__level-profit-logo {
+  width: 61.98px;
+  height: 70px;
  }
  &__level-profit-name {
   font-size: rem(13px);
@@ -345,7 +351,7 @@
   row-gap: 10px;
  }
  &__dropdown.active &__dropdown-menu {
-  max-height: rem(1000px);
+  max-height: 2000px;
   transition: 1.5s;
  }
  &__dropdown-items {
@@ -362,6 +368,7 @@
   max-height: 0;
   height: 100%;
   overflow: hidden;
+  padding: 0 rem(14.5px);
  }
  &__dropdown-name {
   font-size: rem(16px);
@@ -571,7 +578,7 @@
  &__deposit-info-bottom {
   margin-bottom: rem(15px);
  }
- &__deposit-info-col-title {
+ &__ &__deposit-info-col-title {
   color: rgba(133, 133, 135, 1);
   font-size: rem(12px);
   line-height: rem(14.63px);
@@ -579,6 +586,9 @@
   margin-bottom: rem(3px);
  }
  &__deposit-info-col:nth-child(2) &__deposit-info-col-dates {
+  text-align: right;
+ }
+ &__deposit-info-bottom &__deposit-info-col:nth-child(2) {
   text-align: right;
  }
  &__deposit-info-col-date {
@@ -697,6 +707,7 @@
   font-weight: 400;
   line-height: rem(12.19px);
   color: rgba(156, 156, 156, 1);
+  margin-bottom: 5px;
  }
  &__trade-item-value {
   font-size: rem(18px);
@@ -836,13 +847,13 @@
  }
  &__tab {
   background: #2c2c2e;
-  font-size: rem(15px);
-  line-height: rem(18.29px);
+  font-size: 15px;
+  line-height: 18.29px;
   text-align: center;
   font-weight: 400;
   max-width: rem(113px);
   border-radius: rem(10px);
-  padding: rem(10px) 0;
+  padding: 10px 8px;
   cursor: pointer;
  }
  &__tab.active {
@@ -1705,8 +1716,8 @@
   text-wrap: nowrap;
  }
  &__progress-info-img {
-  width: rem(44.27px);
-  height: rem(50px);
+  width: 44.27px;
+  height: 50px;
  }
  &__progress-info-level {
   font-size: rem(16px);
@@ -1853,6 +1864,7 @@
   border: none;
   font-weight: 600;
   cursor: pointer;
+  color: black;
  }
  &__partner-user {
   display: flex;
@@ -2129,12 +2141,17 @@
    padding: 1.2px;
   }
  }
+ &__leader {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+ }
  &__leader-cards {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   gap: 4px;
  }
+
  &__leader-card {
   max-width: 111px;
   width: 100%;
@@ -2434,6 +2451,7 @@
   align-items: center;
   -moz-column-gap: 10px;
   column-gap: 10px;
+  color: black;
  }
  &__block-line-button.completed {
   &::after {
@@ -3140,6 +3158,7 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
+  color: black;
  }
  &__deposit-slide-item.dash-50-999 &__deposit-slide-subtitle {
   background: linear-gradient(

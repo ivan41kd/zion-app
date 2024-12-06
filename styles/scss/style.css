@@ -71,7 +71,7 @@ a:not([class]) {
 a {
   display: contents;
   text-decoration: none;
-  color: inherit;
+  color: inherit !important;
 }
 
 /* Make images easier to work with */
@@ -112,6 +112,7 @@ input[type=number] {
 
 .home {
   padding-top: 3.5rem;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -467,7 +468,7 @@ input[type=number] {
   display: flex;
   flex-direction: column;
   background: rgb(44, 44, 46);
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06) inset;
   max-width: 12rem;
   width: 100%;
@@ -528,6 +529,7 @@ input[type=number] {
   width: 100%;
   background: linear-gradient(93.41deg, #ddc081 22.48%, #5f976e 79.18%);
   cursor: pointer;
+  color: black;
 }
 .dashboard__info.btc .dashboard__card-button {
   background: linear-gradient(263.88deg, #627eea 30.91%, #ff9416 66.42%) !important;
@@ -548,6 +550,10 @@ input[type=number] {
   row-gap: 0.3571428571rem;
   position: relative;
   z-index: 2;
+}
+.dashboard__level-profit-logo {
+  width: 61.98px;
+  height: 70px;
 }
 .dashboard__level-profit-name {
   font-size: 0.9285714286rem;
@@ -718,7 +724,7 @@ input[type=number] {
   row-gap: 10px;
 }
 .dashboard__dropdown.active .dashboard__dropdown-menu {
-  max-height: 71.4285714286rem;
+  max-height: 2000px;
   transition: 1.5s;
 }
 .dashboard__dropdown-items {
@@ -735,6 +741,7 @@ input[type=number] {
   max-height: 0;
   height: 100%;
   overflow: hidden;
+  padding: 0 1.0357142857rem;
 }
 .dashboard__dropdown-name {
   font-size: 1.1428571429rem;
@@ -937,7 +944,7 @@ input[type=number] {
 .dashboard__deposit-info-bottom {
   margin-bottom: 1.0714285714rem;
 }
-.dashboard__deposit-info-col-title {
+.dashboard__ .dashboard__deposit-info-col-title {
   color: rgb(133, 133, 135);
   font-size: 0.8571428571rem;
   line-height: 1.045rem;
@@ -945,6 +952,9 @@ input[type=number] {
   margin-bottom: 0.2142857143rem;
 }
 .dashboard__deposit-info-col:nth-child(2) .dashboard__deposit-info-col-dates {
+  text-align: right;
+}
+.dashboard__deposit-info-bottom .dashboard__deposit-info-col:nth-child(2) {
   text-align: right;
 }
 .dashboard__deposit-info-col-date {
@@ -1062,6 +1072,7 @@ input[type=number] {
   font-weight: 400;
   line-height: 0.8707142857rem;
   color: rgb(156, 156, 156);
+  margin-bottom: 5px;
 }
 .dashboard__trade-item-value {
   font-size: 1.2857142857rem;
@@ -1198,13 +1209,13 @@ input[type=number] {
 }
 .dashboard__tab {
   background: #2c2c2e;
-  font-size: 1.0714285714rem;
-  line-height: 1.3064285714rem;
+  font-size: 15px;
+  line-height: 18.29px;
   text-align: center;
   font-weight: 400;
   max-width: 8.0714285714rem;
   border-radius: 0.7142857143rem;
-  padding: 0.7142857143rem 0;
+  padding: 10px 8px;
   cursor: pointer;
 }
 .dashboard__tab.active {
@@ -1968,8 +1979,8 @@ input[type=number] {
   text-wrap: nowrap;
 }
 .dashboard__progress-info-img {
-  width: 3.1621428571rem;
-  height: 3.5714285714rem;
+  width: 44.27px;
+  height: 50px;
 }
 .dashboard__progress-info-level {
   font-size: 1.1428571429rem;
@@ -2111,6 +2122,7 @@ input[type=number] {
   border: none;
   font-weight: 600;
   cursor: pointer;
+  color: black;
 }
 .dashboard__partner-user {
   display: flex;
@@ -2367,10 +2379,14 @@ input[type=number] {
   mask-composite: exclude;
   padding: 1.2px;
 }
+.dashboard__leader {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 .dashboard__leader-cards {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   gap: 4px;
 }
 .dashboard__leader-card {
@@ -2660,6 +2676,7 @@ input[type=number] {
   align-items: center;
   -moz-column-gap: 10px;
   column-gap: 10px;
+  color: black;
 }
 .dashboard__block-line-button.completed::after {
   display: block;
@@ -3347,6 +3364,7 @@ input[type=number] {
   font-weight: 600;
   border: none;
   cursor: pointer;
+  color: black;
 }
 .dashboard__deposit-slide-item.dash-50-999 .dashboard__deposit-slide-subtitle {
   background: linear-gradient(93.09deg, #777777 11.32%, #eeeeee 55.3%, #707070 95.09%);

@@ -71,7 +71,7 @@ a:not([class]) {
 a {
  display: contents;
  text-decoration: none;
- color: inherit;
+ color: inherit !important;
 }
 
 /* Make images easier to work with */
