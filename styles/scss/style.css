@@ -2447,7 +2447,7 @@ input[type=number] {
 }
 .dashboard__leader-stats-img {
   width: 33.04px;
-  height: 35px;
+  height: 100%;
 }
 .dashboard__leader-stats-level {
   font-weight: 600;
