@@ -22,6 +22,93 @@
   />
  </head>
  <body>
+  <header class="header">
+   <div class="header__wrapper">
+    <a href="dashboard.html">
+     <div class="header__col">Назад</div>
+    </a>
+    <div class="header__center">
+     <p class="header__center-title">ZION TRADE</p>
+     <p class="header__center-subtitle">бот</p>
+    </div>
+    <div class="header__burger-col">
+     <img
+      src="./assets/icons/header/burger-icon.svg"
+      alt=""
+      class="header__burger-icon"
+     />
+     <div class="header__options">
+      <div class="header__options-items">
+       <div class="header__options-item options">
+        Настройки
+        <img
+         src="./assets/icons/header/settings-icon.svg"
+         alt=""
+         class="header__options-item-icon"
+        />
+       </div>
+       <div class="header__options-item update">
+        Обновить страницу
+        <img
+         src="./assets/icons/header/update-icon.svg"
+         alt=""
+         class="header__options-item-icon"
+        />
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="header__menu">
+     <div class="header__menu-wrapper">
+      <div class="header__menu-item language">
+       <div class="header__menu-item-info">
+        <img
+         src="./assets/icons/header/language-icon.svg"
+         alt=""
+         class="header__menu-item-icon"
+        />
+        <p class="header__menu-item-name">Язык</p>
+       </div>
+       <p class="header__language-value">Русский</p>
+      </div>
+      <div class="header__menu-bottom">
+       <div class="header__menu-bottom-item">
+        <div class="header__menu-bottom-item-info">
+         <img
+          src="./assets/icons/header/support-icon.svg"
+          alt=""
+          class="header__menu-bottom-item-icon"
+         />
+         <p class="header__menu-bottom-item-name">Поддержка</p>
+        </div>
+       </div>
+       <div class="header__menu-bottom-item">
+        <div class="header__menu-bottom-item-info">
+         <img
+          src="./assets/icons/header/news-icon.svg"
+          alt=""
+          class="header__menu-bottom-item-icon"
+         />
+         <p class="header__menu-bottom-item-name">Новости ZION TRADE</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="header__languages">
+      <div class="header__languages-items">
+       <div class="header__language-item active">
+        <p class="header__language-item-title">Russian</p>
+        <p class="header__language-item-subtitle">Русский</p>
+       </div>
+       <div class="header__language-item">
+        <p class="header__language-item-title">English</p>
+        <p class="header__language-item-subtitle">English</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
   <section class="dashboard">
    <div class="dashboard__container">
     <div class="dashboard__wrapper">
@@ -118,5 +205,6 @@
   <script src="./js/dashboard/deposit/deposit-crypt.js"></script>
   <script src="./js/dashboard/deposit/deposit.js"></script>
   <script src="./js/dashboard/more/more.js"></script>
+  <script src="./js/header/header.js"></script>
  </body>
 </html>

@@ -42,6 +42,8 @@ body {
  font-family: $font-main;
  background: #1c1c1c;
  color: white;
+ display: flex;
+ flex-direction: column;
 }
 
 /* Set shorter line heights on headings and interactive elements */
