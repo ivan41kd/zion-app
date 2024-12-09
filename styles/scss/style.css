@@ -558,6 +558,7 @@ input[type=number] {
   width: 61.98px;
   height: 70px;
   image-rendering: pixelated;
+  display: block;
 }
 .dashboard__level-profit-name {
   font-size: 0.9285714286rem;
