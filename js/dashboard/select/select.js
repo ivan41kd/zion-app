@@ -95,8 +95,12 @@ levelWrapper.addEventListener('click', () => {
  level.classList.toggle('active');
 });
 
-levels.forEach((level) => {
- renderLevels(level);
+levels.forEach((levelitem, index) => {
+ if (!level.classList.contains('btc')) {
+  renderLevels(levelitem);
+ } else if (level.classList.contains('btc') && index <= 2) {
+  renderLevels(levelitem);
+ }
 });
 
 setLevel(levels[0]);

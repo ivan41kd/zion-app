@@ -173,7 +173,7 @@
   height: 70px;
 
   display: block;
-  image-rendering: optimizeQuality;
+  object-fit: contain;
  }
  &__level-profit-logo.level-2 {
   &::after {
@@ -1734,6 +1734,7 @@
  &__progress-info-img {
   width: 44.27px;
   height: 50px;
+  object-fit: contain;
  }
  &__progress-info-level {
   font-size: rem(16px);
@@ -2237,6 +2238,7 @@
  &__leader-stats-img {
   width: 33.04px;
   height: 100%;
+  object-fit: contain;
  }
  &__leader-stats-level {
   font-weight: 600;
@@ -2444,6 +2446,7 @@
  &__block-line-col-level-icon {
   width: 18.88px;
   height: 20px;
+  object-fit: contain;
  }
  &__block-line-footer {
   display: flex;
@@ -3080,6 +3083,7 @@
  &__history-trade-card-level-img {
   width: 100px;
   height: 112.94px;
+  object-fit: contain;
  }
  &__history-trades-live {
   width: 100%;
@@ -3463,6 +3467,7 @@
  &__deposit-slide-level-icon {
   width: 22.9px;
   height: 25px;
+  object-fit: contain;
  }
  &__more {
   display: none;
