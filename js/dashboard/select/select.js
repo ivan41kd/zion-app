@@ -2,61 +2,61 @@ const levels = [
  {
   level: 1,
   profit: 5,
-  img: './assets/icons/dashboard/level-1.svg',
+  img: './assets/icons/dashboard/level-1.png',
  },
  {
   level: 2,
   profit: 10,
-  img: './assets/icons/dashboard/level-2.svg',
+  img: './assets/icons/dashboard/level-2.png',
  },
  {
   level: 3,
   profit: 15,
-  img: './assets/icons/dashboard/level-3.svg',
+  img: './assets/icons/dashboard/level-3.png',
  },
  {
   level: 4,
   profit: 20,
-  img: './assets/icons/dashboard/level-4.svg',
+  img: './assets/icons/dashboard/level-4.png',
  },
  {
   level: 5,
   profit: 25,
-  img: './assets/icons/dashboard/level-5.svg',
+  img: './assets/icons/dashboard/level-5.png',
  },
  {
   level: 6,
   profit: 30,
-  img: './assets/icons/dashboard/level-6.svg',
+  img: './assets/icons/dashboard/level-6.png',
  },
  {
   level: 7,
   profit: 35,
-  img: './assets/icons/dashboard/level-7.svg',
+  img: './assets/icons/dashboard/level-7.png',
  },
  {
   level: 8,
   profit: 40,
-  img: './assets/icons/dashboard/level-8.svg',
+  img: './assets/icons/dashboard/level-8.png',
  },
  {
   level: 9,
   profit: 42.5,
-  img: './assets/icons/dashboard/level-9.svg',
+  img: './assets/icons/dashboard/level-9.png',
  },
  {
   level: 10,
   profit: 45,
-  img: './assets/icons/dashboard/level-10.svg',
+  img: './assets/icons/dashboard/level-10.png',
  },
  {
   level: 11,
   profit: 47.5,
-  img: './assets/icons/dashboard/level-11.svg',
+  img: './assets/icons/dashboard/level-11.png',
  },
  {
   level: 12,
-  img: './assets/icons/dashboard/level-12.svg',
+  img: './assets/icons/dashboard/level-12.png',
   profit: 50,
  },
 ];

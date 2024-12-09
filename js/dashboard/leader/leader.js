@@ -185,7 +185,7 @@ const renderLines = (arr) => {
     <p class="dashboard__block-line-col-title">Уровень лидеров</p>
     <div class="dashboard__block-line-col-level level-${item.levellead}">
      <img
-      src="./assets/icons/dashboard/level-${item.levellead}.svg"
+      src="./assets/icons/dashboard/level-${item.levellead}.png"
       alt=""
       class="dashboard__block-line-col-level-icon"
      />
@@ -196,7 +196,7 @@ const renderLines = (arr) => {
     <p class="dashboard__block-line-col-title">Ваш уровень</p>
     <div class="dashboard__block-line-col-level level-${item.levellead}">
      <img
-      src="./assets/icons/dashboard/level-${item.yourlevel}.svg"
+      src="./assets/icons/dashboard/level-${item.yourlevel}.png"
       alt=""
       class="dashboard__block-line-col-level-icon"
      />
