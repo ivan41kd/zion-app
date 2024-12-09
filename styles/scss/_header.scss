@@ -41,6 +41,18 @@
   line-height: 14.63px;
   cursor: pointer;
  }
+ &__col.back {
+  align-items: center;
+  column-gap: 8px;
+  &::before {
+   content: '';
+   background: url('../../assets/icons/dashboard/back-icon.svg');
+   display: block;
+   width: 5px;
+   height: 10px;
+   background-size: 100% 100%;
+  }
+ }
  &__burger-icon {
   width: 16px;
   height: 16px;
@@ -238,7 +250,7 @@
  }
 }
 
-.header.home {
+.header.header-home {
  max-width: 420px;
  align-self: center;
  padding: 10px 15px;
@@ -258,11 +270,15 @@
   max-width: 420px;
   width: 100%;
  }
- &__menu-wrapper {
+ .header__menu-wrapper {
   max-width: 420px;
   width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
+ }
+ .header__languages-items {
+  max-width: 420px;
+  width: 100%;
  }
 }

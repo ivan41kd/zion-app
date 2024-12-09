@@ -19,9 +19,8 @@ burgerIcon.addEventListener('click', () => {
 optionItem.addEventListener('click', () => {
  headerMenu.classList.toggle('active');
  burgerCol.classList.remove('active');
+ backItem.classList.add('back');
  backItem.textContent = 'Назад';
- if (backItem.parentElement.tagName === 'A') {
- }
 });
 
 languageMenuItem.addEventListener('click', () => {
@@ -57,6 +56,7 @@ backItem.addEventListener('click', (event) => {
  if (!headerMenu.classList.contains('active')) {
   if (backItem.parentElement.tagName != 'A') {
    backItem.textContent = 'Отмена';
+   if (backItem.classList.contains('back')) backItem.classList.remove('back');
   }
  }
 });
