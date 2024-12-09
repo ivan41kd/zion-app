@@ -119,6 +119,15 @@ const levels = [
 </g>
 </g>
 <defs>
+<g transform="scale(0.001)">
+<foreignObject
+transform="scale(1000)"
+x="0" 
+y="0" 
+width="100%" 
+height="100%" 
+mask="url(#mask)" 
+>
 <filter id="filter0_i_9_11" x="2.23303" y="4.49512" width="66.534" height="65.881" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
@@ -187,6 +196,8 @@ const levels = [
 <clipPath id="clip0_9_11">
 <rect width="69" height="73" fill="white"/>
 </clipPath>
+</foreignObject>
+</g>
 </defs>
 </svg>
 </foreignObject>
