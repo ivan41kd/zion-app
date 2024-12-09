@@ -171,6 +171,10 @@
  &__level-profit-logo {
   width: 61.98px;
   height: 70px;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
  }
 
  &__level-profit-name {
