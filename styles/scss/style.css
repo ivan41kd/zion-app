@@ -1189,6 +1189,7 @@ input[type=number] {
   padding: 10px 0px 13px 15px;
   max-width: 168px;
   width: 100%;
+  border-radius: 15px;
 }
 .dashboard__exchange-wallet {
   display: flex;
@@ -1663,6 +1664,57 @@ input[type=number] {
   content: "";
   position: absolute;
   background: linear-gradient(93.41deg, #ddc081 22.48%, #5f976e 79.18%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  padding: 1.5px;
+}
+.dashboard .dash-level-1 {
+  position: relative;
+}
+.dashboard .dash-level-1::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(93.19deg, #e8595e -6.29%, #5f976e 60.79%, #5f976e 116.81%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  padding: 1.5px;
+}
+.dashboard .dash-level-2 {
+  position: relative;
+}
+.dashboard .dash-level-2::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(93.09deg, #777777 11.32%, #eeeeee 55.3%, #707070 95.09%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  padding: 1.5px;
+}
+.dashboard .dash-level-3 {
+  position: relative;
+}
+.dashboard .dash-level-3::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(263.88deg, #627eea 30.91%, #ff9416 66.42%);
   width: 100%;
   height: 100%;
   top: 0;
