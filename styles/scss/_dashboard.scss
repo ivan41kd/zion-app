@@ -348,7 +348,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -790,8 +791,8 @@
  &__trade-live-info {
   display: grid;
   grid-template-columns:
-   minmax(0, rem(35px)) minmax(0, rem(50px)) minmax(0, rem(38px))
-   minmax(0, rem(50px)) minmax(0, rem(27px)) minmax(0, rem(35px));
+   rem(35px) rem(50px) rem(38px)
+   rem(50px) rem(27px) rem(35px);
   max-width: rem(335px);
   justify-content: space-between;
  }
@@ -813,6 +814,18 @@
   font-size: rem(10px);
   line-height: rem(12.19px);
   font-weight: 600;
+  text-align: center;
+  width: 100%;
+ }
+ &__trade-live-info-col:nth-child(1) &__trade-live-info-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 30px;
+ }
+ &__trade-live-info-col:nth-child(3) &__trade-live-info-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 30px;
  }
  &__exchange {
   display: flex;
@@ -860,7 +873,6 @@
   -moz-column-gap: rem(5px);
   column-gap: rem(5px);
   margin-bottom: rem(25px);
-  width: 100%;
  }
  &__tab {
   background: #2c2c2e;
@@ -910,7 +922,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -931,7 +944,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -951,7 +965,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -977,7 +992,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1003,7 +1019,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1029,7 +1046,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1055,7 +1073,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1081,7 +1100,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1107,7 +1127,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1135,7 +1156,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1164,7 +1186,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1193,7 +1216,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1308,7 +1332,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1326,7 +1351,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1350,7 +1376,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1373,7 +1400,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1392,7 +1420,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1455,7 +1484,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1499,7 +1529,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -1667,11 +1698,38 @@
   font-size: rem(10px);
   line-height: rem(12.19px);
   font-weight: 600;
+  word-break: break-all;
  }
  &__invite-link-icon {
   width: rem(12.75px);
   height: rem(15px);
   cursor: pointer;
+ }
+ &__invited {
+  width: 100%;
+  padding: rem(8px) rem(19px);
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(5px);
+ }
+ &__invited-title {
+  font-weight: 400;
+  font-size: rem(12px);
+  line-height: rem(14.63px);
+  color: rgba(133, 133, 135, 1);
+ }
+
+ &__invited-user {
+  display: flex;
+  align-items: center;
+  font-size: rem(15px);
+  line-height: normal;
+  font-weight: 600;
+  gap: rem(5px);
+ }
+ &__invited-user-icon {
+  width: rem(20px);
+  height: rem(20px);
  }
  &__level-progress-amount-wrapper,
  &__level-progress-title-wrapper {
@@ -2098,20 +2156,25 @@
  }
  &__line-history-cols-header {
   display: grid;
-  grid-template-columns: 7px 28px 60px 61px 36px 77px;
+  grid-template-columns:
+   minmax(0, 7px) minmax(0, 28px) minmax(0, 60px) minmax(0, 61px)
+   minmax(0, 36px) minmax(0, 77px);
   gap: 13px;
   margin-bottom: 10px;
  }
  &__line-history-header-col {
   font-weight: 400;
-  font-size: 8px;
+  font-size: 7px;
   line-height: 9.75px;
   color: #858587;
   text-align: center;
  }
  &__line-history-cols {
   display: grid;
-  grid-template-columns: 7px 28px 60px 61px 36px 77px;
+
+  grid-template-columns:
+   minmax(0, 7px) minmax(0, 28px) minmax(0, 60px) minmax(0, 61px)
+   minmax(0, 36px) minmax(0, 77px);
   gap: 13px;
   align-items: center;
  }
@@ -2123,6 +2186,7 @@
   -moz-column-gap: 2px;
   column-gap: 2px;
   align-items: center;
+  cursor: pointer;
  }
  &__line-history-col-user-icon {
   width: 12px;
@@ -2132,6 +2196,11 @@
   font-weight: 500;
   font-size: 10px;
   line-height: 12.19px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: auto-phrase;
+  max-width: 60px;
  }
  &__line-history-col {
   font-size: 10px;
@@ -2148,7 +2217,7 @@
  }
  &__line-history-deposit {
   font-size: 7px;
-  line-height: 8.53px;
+  line-height: normal;
   position: relative;
   display: flex;
   justify-content: center;
@@ -2173,7 +2242,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -2196,7 +2266,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -2220,7 +2291,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -2789,6 +2861,7 @@
   flex-direction: column;
   max-width: 170px;
   width: 100%;
+  position: relative;
  }
  &__select-level-current {
   max-width: 170px;
@@ -2828,6 +2901,7 @@
    scrollbar-width: thin;
   }
   overflow: auto;
+  top: 75%;
  }
  &__select-level-dropdown-icon {
   transition: 0.3s;
@@ -2842,6 +2916,11 @@
   line-height: 14.63px;
   max-width: 120px;
   width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  color: white;
  }
  &__select-level-items {
   padding: 0;
@@ -2852,12 +2931,15 @@
   border-radius: 15px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  transform: translateY(-9px);
+  top: 0;
   max-height: 0px;
   overflow: hidden;
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
+  position: absolute;
+  z-index: 20;
+  width: 100%;
  }
  &__select-level-item {
   list-style-type: none;
@@ -2914,6 +2996,17 @@
   align-items: center;
   padding: 0 5px;
   z-index: 3;
+ }
+ &__calendar-date-value {
+  padding: 0;
+  background: none;
+  width: rem(67px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(161, 161, 161, 1);
+  border: none;
+  outline: none;
  }
  &__calendar-sticker.binance {
   background: linear-gradient(93.41deg, #ddc081 22.48%, #5f976e 79.18%);
@@ -3026,7 +3119,8 @@
    width: 100%;
    height: 100%;
    background: transparent;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -3042,7 +3136,8 @@
    position: absolute;
    width: 0;
    height: 100%;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    top: 0;
    left: 0;
@@ -3060,7 +3155,8 @@
    width: 100%;
    height: 100%;
    background: rgba(97, 97, 97, 1);
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -3156,8 +3252,8 @@
  }
  &__history-trades-live {
   width: 100%;
-  max-width: 375px;
-  padding: 0 14.5px;
+  max-width: rem(375px);
+  padding: 0 rem(14.5px);
  }
  &__trades-live-name {
   font-weight: 700;
@@ -3300,7 +3396,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -3366,7 +3463,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -3388,7 +3486,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -3405,7 +3504,8 @@
    top: 0;
    left: 0;
    border-radius: 15px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -3427,7 +3527,8 @@
    top: 0;
    left: 0;
    border-radius: 5px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -3449,7 +3550,8 @@
    top: 0;
    left: 0;
    border-radius: 5px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;
@@ -3466,7 +3568,8 @@
    top: 0;
    left: 0;
    border-radius: 5px;
-   -webkit-mask: linear-gradient(#fff 0 0) content-box,
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
    -webkit-mask-composite: destination-out;
    mask-composite: exclude;

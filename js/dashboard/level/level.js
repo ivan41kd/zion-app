@@ -241,6 +241,10 @@ const linkIcon = document.querySelector('.dashboard__invite-link-icon');
 const linkCol = document.querySelector('.dashboard__invite-link-col.link');
 const linkColFirst = document.querySelector('.dashboard__invite-link-col');
 
+const inviteElement = document.querySelector('.dashboard__invite');
+const inviteInput = inviteElement.querySelector('.dashboard__invite-input');
+const inviteButton = inviteElement.querySelector('.dashboard__invite-button');
+
 const defPercent = (value, value2) => {
  let percent = (value / value2) * 100;
 
@@ -426,6 +430,24 @@ const copyLink = (link) => {
  linkColFirst.classList.add('copied');
 };
 
+const saveLink = (input) => {
+ const regex = /https?:\/\/crypto\d{24,}/;
+ if (regex.test(input.value)) {
+  const invitedElement = document.createElement('div');
+  invitedElement.className = 'dashboard__invited';
+  invitedElement.innerHTML = `        <p class="dashboard__invited-title">Вас пригласил</p>
+  <div class="dashboard__invited-user">
+   <img
+    src="./assets/icons/dashboard/user-icon.svg"
+    alt="ZION ПРИГЛАСИВШИЙ"
+    class="dashboard__invited-user-icon"
+   />
+   <p class="dashboard__invited-user-name">UserID 11 @jdjcjsjdjs</p>
+  </div>`;
+  inviteElement.replaceWith(invitedElement);
+ }
+};
+
 renderLevel(currentLevel);
 
 levelSlides.forEach((slide, index) => {
@@ -441,3 +463,7 @@ levelSlides.forEach((slide, index) => {
 renderTasks(currentLevel, levelTasks);
 
 linkIcon.addEventListener('click', () => copyLink(linkCol));
+
+inviteButton.addEventListener('click', () => {
+ saveLink(inviteInput);
+});

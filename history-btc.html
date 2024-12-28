@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
  <head>
   <meta charset="UTF-8" />
@@ -254,7 +254,11 @@
       <div class="dashboard__history-header">
        <div class="dashboard__select-level btc">
         <div class="dashboard__select-level-current">
-         <p class="dashboard__select-level-current-title"></p>
+         <input
+          type="text"
+          disabled
+          class="dashboard__select-level-current-title"
+         />
          <img
           src="./assets/icons/dashboard/dropdown-icon.svg"
           alt=""
@@ -267,7 +271,7 @@
         <div class="dashboard__calendar-container">
          <div class="dashboard__calendar-sticker btc">Дата</div>
          <div class="dashboard__calendar-wrapper">
-          <p class="dashboard__calendar-date-value"></p>
+          <input type="text" disabled class="dashboard__calendar-date-value" />
           <img
            src="./assets/icons/dashboard/calendar.svg"
            alt=""
@@ -283,7 +287,11 @@
             alt=""
             class="dashboard__datepicker-prev-date"
            />
-           <p class="dashboard__datepicker-current-date-value"></p>
+           <input
+            type="text"
+            disabled
+            class="dashboard__datepicker-current-date-value"
+           />
            <img
             src="./assets/icons/dashboard/next-date.svg"
             alt=""
@@ -324,7 +332,7 @@
          <p class="dashboard__history-trade-card-level-value">5%</p>
         </div>
         <img
-         src="./assets/icons/dashboard/level-1.png"
+         src="./assets/icons/dashboard/btc-big.svg"
          alt=""
          class="dashboard__history-trade-card-level-img"
         />

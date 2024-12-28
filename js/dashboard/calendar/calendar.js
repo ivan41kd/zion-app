@@ -106,8 +106,9 @@ const addDateClickEvents = () => {
      item.classList.add('active');
 
      date = selectedDate;
-     currentDate.textContent = formatDate(selectedDate);
+     currentDate.value = formatDate(selectedDate);
     }
+    datepicker.classList.remove('active');
    });
   }
  });
@@ -125,6 +126,6 @@ prevMonth.addEventListener('click', () => {
  updateCalendar();
 });
 
-currentDate.textContent = formatDate(new Date());
+currentDate.value = formatDate(new Date());
 
 updateCalendar();

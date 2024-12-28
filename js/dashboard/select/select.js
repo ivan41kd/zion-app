@@ -60,10 +60,12 @@ const levels = [
   profit: 50,
  },
 ];
-const level = document.querySelector('.dashboard__select-level');
-const levelWrapper = level.querySelector('.dashboard__select-level-current');
-const levelList = level.querySelector('.dashboard__select-level-items');
-const levelTitle = level.querySelector(
+const levelSection = document.querySelector('.dashboard__select-level');
+const levelWrapper = levelSection.querySelector(
+ '.dashboard__select-level-current'
+);
+const levelList = levelSection.querySelector('.dashboard__select-level-items');
+const levelTitle = levelSection.querySelector(
  '.dashboard__select-level-current-title'
 );
 
@@ -82,25 +84,23 @@ const renderLevels = (level) => {
  levelItem.className = 'dashboard__select-level-item';
  levelItem.textContent = `Уровень ${level.level}`;
  levelList.append(levelItem);
- levelItem.addEventListener('click', () => setLevel(level));
 };
 
 const setLevel = ({ level, img, profit }) => {
- levelTitle.textContent = `Уровень ${level} - ${profit}%`;
+ levelTitle.value = `Уровень ${level} - ${profit}%`;
  cardName.textContent = `Уровень ${level}`;
  cardValue.textContent = `${profit}%`;
  cardImg.src = img;
+ levelSection.classList.remove('active');
 };
 levelWrapper.addEventListener('click', () => {
- level.classList.toggle('active');
+ levelSection.classList.toggle('active');
 });
 
 levels.forEach((levelitem, index) => {
- if (!level.classList.contains('btc')) {
+ if (!levelSection.classList.contains('btc')) {
   renderLevels(levelitem);
- } else if (level.classList.contains('btc') && index <= 2) {
+ } else if (levelSection.classList.contains('btc') && index <= 2) {
   renderLevels(levelitem);
  }
 });
-
-setLevel(levels[0]);
