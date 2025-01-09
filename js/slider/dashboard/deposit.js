@@ -3,7 +3,7 @@ new Splide('.dashboard__deposit-slider', {
  arrows: true,
  pagination: false,
  gap: 28.5,
- width: 223,
+ width: '15.9rem',
  autoHeight: true,
  classes: {
   arrows: 'splide__arrows dashboard__arrows',

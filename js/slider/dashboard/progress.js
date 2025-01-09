@@ -3,7 +3,6 @@ new Splide('.splide', {
  arrows: true,
  pagination: false,
  gap: 5,
- width: 274,
  autoHeight: true,
  classes: {
   arrows: 'splide__arrows dashboard__arrows',

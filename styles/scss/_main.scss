@@ -13,3 +13,18 @@ body {
  display: flex;
  flex-direction: column;
 }
+
+html {
+ -moz-text-size-adjust: none;
+ -webkit-text-size-adjust: none;
+ -ms-text-size-adjust: none;
+ text-size-adjust: none;
+ scroll-behavior: smooth;
+ @media only screen and (min-width: 0px) {
+  font-size: ($base-font-size / $design-mobile-width) * 100vw;
+ }
+
+ @include ifdesktop {
+  font-size: ($base-font-size / $design-desktop-width) * 100vw;
+ }
+}

@@ -1,9 +1,9 @@
 .header {
- padding: 10px 20px;
+ padding: rem(10px) rem(20px);
 
  display: flex;
  justify-content: center;
- max-width: 375px;
+ max-width: rem(375px);
  width: 100%;
  align-self: center;
  position: sticky;
@@ -25,38 +25,38 @@
  &__center-title {
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
-  font-size: 15px;
-  line-height: 18.29px;
+  font-size: rem(15px);
+  line-height: rem(18.29px);
   text-align: center;
  }
  &__center-subtitle {
   font-weight: 500;
-  font-size: 10px;
-  line-height: 12.19px;
+  font-size: rem(10px);
+  line-height: rem(12.19px);
   color: rgba(134, 144, 139, 1);
  }
  &__col {
   display: flex;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14.63px;
+  font-size: rem(12px);
+  line-height: rem(14.63px);
   cursor: pointer;
  }
  &__col.back {
   align-items: center;
-  column-gap: 8px;
+  column-gap: rem(8px);
   &::before {
    content: '';
    background: url('../../assets/icons/dashboard/back-icon.svg');
    display: block;
-   width: 5px;
-   height: 10px;
+   width: rem(5px);
+   height: rem(10px);
    background-size: 100% 100%;
   }
  }
  &__burger-icon {
-  width: 16px;
-  height: 16px;
+  width: rem(16px);
+  height: rem(16px);
   cursor: pointer;
  }
 
@@ -71,13 +71,13 @@
  }
  &__options {
   position: absolute;
-  right: 0;
+  right: rem(1px);
   background: rgba(44, 44, 46, 1);
-  border-radius: 10px;
+  border-radius: rem(10px);
   top: 140%;
-  padding: 13px;
-  max-width: 200px;
-  width: 200px;
+  padding: rem(13px);
+  max-width: rem(200px);
+  width: rem(200px);
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
@@ -86,10 +86,13 @@
  &__options-item {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
-  line-height: 17.07px;
+  line-height: rem(17.07px);
   cursor: pointer;
+ }
+ &__options-item-icon {
+  width: rem(15px);
  }
  &__options-item:not(:nth-last-child(1)) {
   padding-bottom: 7px;
@@ -107,11 +110,11 @@
  &__options-items {
   display: flex;
   flex-direction: column;
-  row-gap: 22px;
+  row-gap: rem(22px);
  }
  &__menu {
   position: fixed;
-  top: 40px;
+  top: rem(40px);
   background: rgba(28, 28, 28, 1);
   width: 100%;
   height: 100dvh;
@@ -123,30 +126,28 @@
   align-items: center;
   transform: translateX(-100%);
   transition: 0.3s;
-  padding-top: 15px;
+  padding-top: rem(15px);
  }
  &__menu.active {
   transform: translateX(0);
   transition: 0.3s;
  }
  &__menu-wrapper {
-  max-width: 350px;
-  width: 100%;
+  width: rem(350px);
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: rem(25px);
  }
  &__burger-col active &__menu-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
-  max-width: 350px;
-  width: 100%;
+  row-gap: rem(25px);
+  width: rem(350px);
  }
  &__menu-item {
   background: rgba(44, 44, 46, 1);
   border-radius: 15px;
-  padding: 12.5px 20px;
+  padding: rem(12.5px) rem(20px);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -154,43 +155,46 @@
  }
  &__language-value {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21.94px;
+  font-size: rem(18px);
+  line-height: rem(21.94px);
   color: rgba(133, 133, 135, 1);
  }
  &__menu-item-icon {
-  width: 25px;
-  height: 25px;
+  width: rem(25px);
+  height: rem(25px);
  }
  &__menu-item-info {
   display: flex;
-  column-gap: 15px;
+  column-gap: rem(15px);
   align-items: center;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 500;
-  line-height: 21.94px;
+  line-height: rem(21.94px);
  }
  &__menu-bottom {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: rem(10px);
   background: rgba(44, 44, 46, 1);
-  border-radius: 15px;
-  padding: 11.5px 20px;
+  border-radius: rem(15px);
+  padding: rem(11.5px) rem(20px);
  }
  &__menu-bottom-item-info {
   display: flex;
-  column-gap: 15px;
+  column-gap: rem(15px);
   align-items: center;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 500;
-  line-height: 21.94px;
+  line-height: rem(21.94px);
+ }
+ &__menu-bottom-item-icon {
+  width: rem(25px);
  }
  &__menu-bottom-item {
   cursor: pointer;
  }
  &__menu-bottom-item:not(:nth-last-child(1)) {
-  padding-bottom: 10px;
+  padding-bottom: rem(10px);
   border-bottom: 1px solid rgba(64, 64, 64, 1);
  }
  &__languages {
@@ -204,7 +208,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15px;
+  padding-top: rem(15px);
  }
  &__languages.active {
   transform: translateX(0);
@@ -212,16 +216,15 @@
  }
  &__languages-items {
   background: rgba(44, 44, 46, 1);
-  border-radius: 15px;
-  padding: 9.5px 20px;
+  border-radius: rem(15px);
+  padding: rem(9.5px) rem(20px);
   display: flex;
   flex-direction: column;
-  max-width: 350px;
-  width: 100%;
+  width: rem(350px);
  }
  &__language-item:not(:nth-last-child(1)) {
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: rem(10px);
+  margin-bottom: rem(10px);
   border-bottom: 1px solid rgba(64, 64, 64, 1);
  }
  &__language-item {
@@ -230,9 +233,11 @@
  &__language-item.active {
   position: relative;
   &::after {
-   background: url('data:image/svg+xml,<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6.5L6 11.5L16 1.5" stroke="%235F976E" stroke-width="2" stroke-linecap="round"/></svg>');
-   width: 15px;
-   height: 15px;
+   background: url('data:image/svg+xml,<svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6.5L6 11.5L16 1.5" stroke="%235F976E" stroke-width="2" stroke-linecap="round"/></svg>')
+    no-repeat;
+   width: rem(20px);
+
+   height: rem(20px);
    position: absolute;
    top: 25%;
    right: 0;
@@ -241,18 +246,18 @@
  }
  &__language-item-title {
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18.29px;
+  font-size: rem(15px);
+  line-height: rem(18.29px);
  }
  &__language-item-subtitle {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 15.85px;
+  font-size: rem(13px);
+  line-height: rem(15.85px);
  }
 }
 
 .header.header-home {
- max-width: 420px;
+ max-width: rem(420px);
  align-self: center;
  padding: 10px 15px;
  &__languages-items {
