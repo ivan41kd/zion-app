@@ -79,23 +79,20 @@ const cardImg = document.querySelector(
  '.dashboard__history-trade-card-level-img'
 );
 
-const renderLevels = (level) => {
- const levelItem = document.createElement('li');
- levelItem.className = 'dashboard__select-level-item';
- levelItem.textContent = `Уровень ${level.level}`;
- levelList.append(levelItem);
-};
-
-const setLevel = ({ level, img, profit }) => {
- levelTitle.value = `Уровень ${level} - ${profit}%`;
- cardName.textContent = `Уровень ${level}`;
- cardValue.textContent = `${profit}%`;
- cardImg.src = img;
+const setLevel = ({ level }) => {
+ levelTitle.value = `${level}`;
  levelSection.classList.remove('active');
 };
 levelWrapper.addEventListener('click', () => {
  levelSection.classList.toggle('active');
 });
+const renderLevels = (level) => {
+ const levelItem = document.createElement('li');
+ levelItem.className = 'dashboard__select-level-item';
+ levelItem.textContent = `Уровень ${level.level}`;
+ levelList.append(levelItem);
+ levelItem.addEventListener('click', () => setLevel(level));
+};
 
 levels.forEach((levelitem, index) => {
  if (!levelSection.classList.contains('btc')) {
