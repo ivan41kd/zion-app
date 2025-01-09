@@ -362,7 +362,7 @@ const renderTasks = (level, tasks) => {
                <div class="dashboard__level-progress-title-wrapper">
                <p class="dashboard__level-progress-title">Лидер в 1 линии уровня</p>
                <img
-               src="./assets/icons/dashboard/level-${currentLevel.level}.svg"
+               src="./assets/icons/dashboard/level-${currentLevel.level}.png"
                alt=""
                class="dashboard__level-progress-wallet-icon"
               />
