@@ -2254,12 +2254,12 @@ select {
 .dashboard__line {
   max-width: 350px;
   display: grid;
-  grid-template-rows: fit-content(100%) 0fr;
+  grid-template-rows: max-content 0fr;
   row-gap: 7px;
   transition: 0.3s;
 }
 .dashboard__line.unhide {
-  grid-template-rows: fit-content(100%) 1fr;
+  grid-template-rows: max-content 1fr;
 }
 .dashboard__lines {
   display: flex;
