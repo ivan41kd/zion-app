@@ -4323,4 +4323,9 @@
  &__withdraw.btc &__withdraw-end-button {
   background: linear-gradient(263.88deg, #627eea 30.91%, #ff9416 66.42%);
  }
+
+ &__progress-track,
+ &__progress-slides {
+  overflow: visible !important;
+ }
 }
