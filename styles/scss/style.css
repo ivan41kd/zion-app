@@ -775,6 +775,7 @@ select {
   -moz-column-gap: 0.5rem;
   column-gap: 0.5rem;
   cursor: pointer;
+  margin-bottom: 1.2857142857rem;
 }
 .dashboard__dropdown-name::after {
   content: "";

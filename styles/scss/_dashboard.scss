@@ -408,6 +408,7 @@
   -moz-column-gap: rem(7px);
   column-gap: rem(7px);
   cursor: pointer;
+  margin-bottom: rem(18px);
   &::after {
    content: '';
    background: url('../../assets/icons/dashboard/dropdown-icon.svg');
