@@ -5,6 +5,16 @@ lines.forEach((line) => {
  const user = line.querySelectorAll('.dashboard__line-history-col-user');
 
  unhide.addEventListener('click', () => {
+  lines.forEach((otherLine) => {
+   if (otherLine !== line) {
+    otherLine.classList.remove('unhide');
+    const otherUnhide = otherLine.querySelector('.dashboard__line-unhide');
+    if (otherUnhide) {
+     otherUnhide.textContent = 'Раскрыть';
+    }
+   }
+  });
+
   if (line.classList.contains('unhide')) {
    unhide.textContent = 'Раскрыть';
   } else {
@@ -12,6 +22,7 @@ lines.forEach((line) => {
   }
   line.classList.toggle('unhide');
  });
+
  user.forEach((user) => {
   const userName = user.querySelector('.dashboard__line-history-col-user-name');
   user.addEventListener('click', () => {

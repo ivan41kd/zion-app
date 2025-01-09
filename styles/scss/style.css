@@ -563,7 +563,7 @@ select {
   height: 70px;
   display: block;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .dashboard__level-profit-logo.level-2::after {
   display: block;
@@ -2093,7 +2093,7 @@ select {
   width: 44.27px;
   height: 50px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .dashboard__progress-info-level {
   font-size: 1.1428571429rem;
@@ -2253,13 +2253,13 @@ select {
 }
 .dashboard__line {
   max-width: 350px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: fit-content(100%) 0fr;
   row-gap: 7px;
   transition: 0.3s;
 }
-.dashboard__line.unhide .dashboard__line-history {
-  max-height: 1000px;
+.dashboard__line.unhide {
+  grid-template-rows: fit-content(100%) 1fr;
 }
 .dashboard__lines {
   display: flex;
@@ -2335,7 +2335,6 @@ select {
   cursor: pointer;
 }
 .dashboard__line-history {
-  max-height: 0;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -2568,7 +2567,7 @@ select {
   width: 33.04px;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .dashboard__leader-stats-level {
   font-weight: 600;
@@ -2775,7 +2774,7 @@ select {
   width: 18.88px;
   height: 20px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .dashboard__block-line-footer {
   display: flex;
@@ -3416,7 +3415,7 @@ select {
   width: 100px;
   height: 112.94px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .dashboard__history-trades-live {
   width: 100%;
@@ -3726,7 +3725,7 @@ select {
   width: 22.9px;
   height: 25px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .dashboard__more {
   display: none;
@@ -3863,7 +3862,7 @@ select {
   width: 30px;
   height: 20px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .dashboard__more-card-level-wrapper {
   display: flex;
