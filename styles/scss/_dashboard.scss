@@ -41,6 +41,10 @@
   color: white;
  }
 
+ &__slide-item {
+  border: rem(2px) solid transparent;
+ }
+
  &__slide-item.active {
   border: rem(2px) solid rgba(95, 151, 110, 1);
  }
