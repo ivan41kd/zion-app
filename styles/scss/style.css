@@ -4385,6 +4385,9 @@ select {
 .dashboard__withdraw.btc .dashboard__withdraw-end-button {
   background: linear-gradient(263.88deg, #627eea 30.91%, #ff9416 66.42%);
 }
+.dashboard__progress-track, .dashboard__progress-slides {
+  overflow: visible !important;
+}
 
 .popup {
   position: fixed;
