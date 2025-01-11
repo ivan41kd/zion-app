@@ -21,7 +21,7 @@ const initCrypt = () => {
 
  const changeWay = (way) => {
   if (way == 1) {
-   more.style.display = 'flex';
+   more.style.display = 'grid';
    const walletsWrapper = document.querySelector(
     '.dashboard__withdraw-wallets'
    );
@@ -396,8 +396,13 @@ const initCrypt = () => {
    </defs>
    </svg>
    `
-   } <button class='dashboard__withdraw-end-button'>
-   Перейти в раздел история операций</button>`;
+   } 
+
+   <a href='dashboard.html'>
+   <button class='dashboard__withdraw-end-button'>
+   Перейти в раздел история операций</button>
+   </a>
+`;
    withdrawPage.append(withdrawEnd);
   }
 

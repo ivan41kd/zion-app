@@ -154,10 +154,11 @@ const blockLinesWrapper = document.querySelector('.dashboard__block-lines');
 
 const renderLines = (arr) => {
  blockLinesWrapper.innerHTML = '';
+ const formatter = new Intl.NumberFormat('en-EN');
  arr.forEach((item, index) => {
   const blockLine = document.createElement('div');
   blockLine.className = 'dashboard__block-line';
-  blockLine.innerHTML = `       <div class="dashboard__block-line-header">
+  blockLine.innerHTML = `<div class="dashboard__block-line-header">
   Линия 1${index >= 1 ? `-${index + 1}` : ''}
   <img
    src="./assets/icons/dashboard/dropdown-icon.svg"
@@ -165,19 +166,20 @@ const renderLines = (arr) => {
    class="dashboard__block-line-dropdown-icon"
   />
  </div>
+ <div class='dashboard__block-line-container'>
+ 
+ <div class='dashboard__block-line-wrapper'>
  <div class="dashboard__block-line-info">
   <div class="dashboard__block-line-cols">
    <div class="dashboard__block-line-col">
     <p class="dashboard__block-line-col-title">Количество лидеров</p>
     <p class="dashboard__block-line-col-value">${item.quantity}/${
-   item.maxquantity
-  }</p>
+     item.maxquantity
+    }</p>
    </div>
    <div class="dashboard__block-line-col">
     <p class="dashboard__block-line-col-title">Оборот структуры</p>
-    <p class="dashboard__block-line-col-value">$ ${item.turnover}/${
-   item.maxturnover
-  }</p>
+    <p class="dashboard__block-line-col-value amount">$ ${formatter.format(item.turnover)} / ${formatter.format(item.maxturnover)}</p>
    </div>
   </div>
   <div class="dashboard__block-line-cols">
@@ -206,9 +208,14 @@ const renderLines = (arr) => {
   </div>
  </div>
  <div class="dashboard__block-line-footer level-${item.levellead}">
+ <a href='withdraw-leader.html'>
  <button class="dashboard__block-line-button">Забрать бонус</button>
- <p class="dashboard__block-line-bonus">$ ${item.bonus}</p>
-</div>`;
+ </a>
+ <p class="dashboard__block-line-bonus">$ ${formatter.format(item.bonus)}</p>
+</div>
+</div>
+</div>
+`;
   blockLinesWrapper.append(blockLine);
   const blockLineHeader = blockLine.querySelector(
    '.dashboard__block-line-header'

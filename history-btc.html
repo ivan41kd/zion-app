@@ -113,13 +113,17 @@
    <div class="dashboard__container">
     <div class="dashboard__wrapper">
      <div class="dashboard__header-tabs">
-      <a href="stats-btc.html">
-       <div class="dashboard__header-tab">
-        <p class="dashboard__header-tab-name">Статистика торговли</p>
-       </div>
-      </a>
-      <div class="dashboard__header-tab active">
-       <p class="dashboard__header-tab-name">История сделок</p>
+      <div class="dashboard__header-tabs-wrapper">
+       <a href="stats-btc.html">
+        <div class="dashboard__header-tab">
+         <p class="dashboard__header-tab-name">Статистика торговли</p>
+        </div>
+       </a>
+       <a href="history-btc.html">
+        <div class="dashboard__header-tab active">
+         <p class="dashboard__header-tab-name">История сделок</p>
+        </div>
+       </a>
       </div>
      </div>
      <div class="dashboard__slider splide">
@@ -253,19 +257,23 @@
      <div class="dashboard__content">
       <div class="dashboard__history-header">
        <div class="dashboard__select-level btc">
-        <div class="dashboard__select-level-current">
-         <input
-          type="text"
-          disabled
-          class="dashboard__select-level-current-title"
-         />
-         <img
-          src="./assets/icons/dashboard/dropdown-icon.svg"
-          alt=""
-          class="dashboard__select-level-dropdown-icon"
-         />
+        <div class="dashboard__select-level-wrapper">
+         <div class="dashboard__select-level-current">
+          <input
+           type="text"
+           disabled
+           class="dashboard__select-level-current-title"
+          />
+          <img
+           src="./assets/icons/dashboard/dropdown-icon.svg"
+           alt=""
+           class="dashboard__select-level-dropdown-icon"
+          />
+         </div>
+         <div class="dashboard__select-level-items-container">
+          <ul class="dashboard__select-level-items"></ul>
+         </div>
         </div>
-        <ul class="dashboard__select-level-items"></ul>
        </div>
        <div class="dashboard__calendar">
         <div class="dashboard__calendar-container">
@@ -338,159 +346,161 @@
     <div class="dashboard__history-trades-live">
      <p class="dashboard__trades-live-name">Сделки Live</p>
      <div class="dashboard__trades-live">
-      <div class="dashboard__trades-live-item">
-       <div class="dashboard__trade-pair">
-        <p class="dashboard__trade-pair-name">Торгуемая пара</p>
-        <div class="dashboard__trade-pair-wallet">
-         <img
-          src="./assets/icons/dashboard/d-icon.svg"
-          alt=""
-          class="dashboard__trade-pair-wallet-icon"
-         />
-         <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
+      <div class="dashboard__trades-live-container">
+       <div class="dashboard__trades-live-item">
+        <div class="dashboard__trade-pair">
+         <p class="dashboard__trade-pair-name">Торгуемая пара</p>
+         <div class="dashboard__trade-pair-wallet">
+          <img
+           src="./assets/icons/dashboard/d-icon.svg"
+           alt=""
+           class="dashboard__trade-pair-wallet-icon"
+          />
+          <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
+         </div>
+        </div>
+        <div class="dashboard__trade-live-info plus">
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Цена покупки</p>
+          <p class="dashboard__trade-live-info-value">1.235</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Время покупки</p>
+          <p class="dashboard__trade-live-info-value">14:05 UTC</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Цена продажи</p>
+          <p class="dashboard__trade-live-info-value">1.235</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Время продажи</p>
+          <p class="dashboard__trade-live-info-value">14:05 UTC</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Спред</p>
+          <p class="dashboard__trade-live-info-value">3</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">USDT</p>
+          <p class="dashboard__trade-live-info-value">0.6090</p>
+         </div>
         </div>
        </div>
-       <div class="dashboard__trade-live-info plus">
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Цена покупки</p>
-         <p class="dashboard__trade-live-info-value">1.235</p>
+       <div class="dashboard__trades-live-item">
+        <div class="dashboard__trade-pair">
+         <p class="dashboard__trade-pair-name">Торгуемая пара</p>
+         <div class="dashboard__trade-pair-wallet">
+          <img
+           src="./assets/icons/dashboard/d-icon.svg"
+           alt=""
+           class="dashboard__trade-pair-wallet-icon"
+          />
+          <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
+         </div>
         </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Время покупки</p>
-         <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Цена продажи</p>
-         <p class="dashboard__trade-live-info-value">1.235</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Время продажи</p>
-         <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Спред</p>
-         <p class="dashboard__trade-live-info-value">3</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">USDT</p>
-         <p class="dashboard__trade-live-info-value">0.6090</p>
-        </div>
-       </div>
-      </div>
-      <div class="dashboard__trades-live-item">
-       <div class="dashboard__trade-pair">
-        <p class="dashboard__trade-pair-name">Торгуемая пара</p>
-        <div class="dashboard__trade-pair-wallet">
-         <img
-          src="./assets/icons/dashboard/d-icon.svg"
-          alt=""
-          class="dashboard__trade-pair-wallet-icon"
-         />
-         <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
-        </div>
-       </div>
-       <div class="dashboard__trade-live-info minus">
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Цена покупки</p>
-         <p class="dashboard__trade-live-info-value">1.235</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Время покупки</p>
-         <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Цена продажи</p>
-         <p class="dashboard__trade-live-info-value">1.235</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Время продажи</p>
-         <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Спред</p>
-         <p class="dashboard__trade-live-info-value">3</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">USDT</p>
-         <p class="dashboard__trade-live-info-value">-0.6090</p>
+        <div class="dashboard__trade-live-info minus">
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Цена покупки</p>
+          <p class="dashboard__trade-live-info-value">1.235</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Время покупки</p>
+          <p class="dashboard__trade-live-info-value">14:05 UTC</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Цена продажи</p>
+          <p class="dashboard__trade-live-info-value">1.235</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Время продажи</p>
+          <p class="dashboard__trade-live-info-value">14:05 UTC</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Спред</p>
+          <p class="dashboard__trade-live-info-value">3</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">USDT</p>
+          <p class="dashboard__trade-live-info-value">-0.6090</p>
+         </div>
         </div>
        </div>
-      </div>
-      <div class="dashboard__trades-live-item">
-       <div class="dashboard__trade-pair">
-        <p class="dashboard__trade-pair-name">Торгуемая пара</p>
-        <div class="dashboard__trade-pair-wallet">
-         <img
-          src="./assets/icons/dashboard/d-icon.svg"
-          alt=""
-          class="dashboard__trade-pair-wallet-icon"
-         />
-         <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
+       <div class="dashboard__trades-live-item">
+        <div class="dashboard__trade-pair">
+         <p class="dashboard__trade-pair-name">Торгуемая пара</p>
+         <div class="dashboard__trade-pair-wallet">
+          <img
+           src="./assets/icons/dashboard/d-icon.svg"
+           alt=""
+           class="dashboard__trade-pair-wallet-icon"
+          />
+          <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
+         </div>
+        </div>
+        <div class="dashboard__trade-live-info no-spread">
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Цена покупки</p>
+          <p class="dashboard__trade-live-info-value">1.235</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Время покупки</p>
+          <p class="dashboard__trade-live-info-value">14:05 UTC</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Цена продажи</p>
+          <p class="dashboard__trade-live-info-value">1.235</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Время продажи</p>
+          <p class="dashboard__trade-live-info-value">14:05 UTC</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Спред</p>
+          <p class="dashboard__trade-live-info-value">0</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">USDT</p>
+          <p class="dashboard__trade-live-info-value">0.6090</p>
+         </div>
         </div>
        </div>
-       <div class="dashboard__trade-live-info no-spread">
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Цена покупки</p>
-         <p class="dashboard__trade-live-info-value">1.235</p>
+       <div class="dashboard__trades-live-item">
+        <div class="dashboard__trade-pair">
+         <p class="dashboard__trade-pair-name">Торгуемая пара</p>
+         <div class="dashboard__trade-pair-wallet">
+          <img
+           src="./assets/icons/dashboard/d-icon.svg"
+           alt=""
+           class="dashboard__trade-pair-wallet-icon"
+          />
+          <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
+         </div>
         </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Время покупки</p>
-         <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Цена продажи</p>
-         <p class="dashboard__trade-live-info-value">1.235</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Время продажи</p>
-         <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Спред</p>
-         <p class="dashboard__trade-live-info-value">0</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">USDT</p>
-         <p class="dashboard__trade-live-info-value">0.6090</p>
-        </div>
-       </div>
-      </div>
-      <div class="dashboard__trades-live-item">
-       <div class="dashboard__trade-pair">
-        <p class="dashboard__trade-pair-name">Торгуемая пара</p>
-        <div class="dashboard__trade-pair-wallet">
-         <img
-          src="./assets/icons/dashboard/d-icon.svg"
-          alt=""
-          class="dashboard__trade-pair-wallet-icon"
-         />
-         <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
-        </div>
-       </div>
-       <div class="dashboard__trade-live-info empty">
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Цена покупки</p>
-         <p class="dashboard__trade-live-info-value">1.235</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Время покупки</p>
-         <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Цена продажи</p>
-         <p class="dashboard__trade-live-info-value">-</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Время продажи</p>
-         <p class="dashboard__trade-live-info-value">-:-:- UTC</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">Спред</p>
-         <p class="dashboard__trade-live-info-value">-</p>
-        </div>
-        <div class="dashboard__trade-live-info-col">
-         <p class="dashboard__trade-live-info-name">USDT</p>
-         <p class="dashboard__trade-live-info-value">-</p>
+        <div class="dashboard__trade-live-info empty">
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Цена покупки</p>
+          <p class="dashboard__trade-live-info-value">1.235</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Время покупки</p>
+          <p class="dashboard__trade-live-info-value">14:05 UTC</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Цена продажи</p>
+          <p class="dashboard__trade-live-info-value">-</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Время продажи</p>
+          <p class="dashboard__trade-live-info-value">-:-:- UTC</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">Спред</p>
+          <p class="dashboard__trade-live-info-value">-</p>
+         </div>
+         <div class="dashboard__trade-live-info-col">
+          <p class="dashboard__trade-live-info-name">USDT</p>
+          <p class="dashboard__trade-live-info-value">-</p>
+         </div>
         </div>
        </div>
       </div>

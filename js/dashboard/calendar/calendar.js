@@ -53,7 +53,7 @@ const updateCalendar = () => {
  const headerCurrentDate = document.querySelector(
   '.dashboard__datepicker-current-date-value'
  );
- headerCurrentDate.textContent = `${months[month]} ${year}`;
+ headerCurrentDate.value = `${months[month]} ${year}`;
 
  const firstDayOfMonth = new Date(year, month, 1);
  const lastDayOfMonth = new Date(year, month + 1, 0);

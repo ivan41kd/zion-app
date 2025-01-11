@@ -20,7 +20,7 @@ const initBank = () => {
 
  const changeWay = (way) => {
   if (way == 0) {
-   more.style.display = 'flex';
+   more.style.display = 'grid';
    const moreTexts = more.querySelector('.dashboard__more-texts');
    moreTexts.innerHTML = `   <p class="dashboard__more-text">
    Вывод заработанных средств возможен
@@ -479,7 +479,12 @@ const initBank = () => {
    </defs>
    </svg>
    `
-   } <button class='dashboard__withdraw-end-button'>Перейти в раздел история операций</button>`;
+   }
+   
+   <a href='dashboard.html'>
+   <button class='dashboard__withdraw-end-button'>
+   Перейти в раздел история операций</button>
+   </a>`;
    withdrawPage.append(withdrawEnd);
   }
 

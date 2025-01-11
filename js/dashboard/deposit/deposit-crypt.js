@@ -12,7 +12,7 @@ const initDeposit = () => {
  const changeWay = (way) => {
   switch (way) {
    case 2:
-    more.style.display = 'flex';
+    more.style.display = 'grid';
     const walletsWrapper = document.querySelector(
      '.dashboard__create-deposit-wallets'
     );
