@@ -191,9 +191,11 @@
   display: block;
   font-size: rem(9px);
   line-height: rem(10.97px);
-  color: rgba(65, 143, 101, 1);
+  color: rgba(65, 143, 101, 1) !important;
   font-weight: 300;
   text-decoration: none;
+  display: flex;
+  align-items: center;
  }
  &__more-slide-logo {
   width: rem(46px);

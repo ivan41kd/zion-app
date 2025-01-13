@@ -224,9 +224,11 @@ html {
   display: block;
   font-size: 0.6428571429rem;
   line-height: 0.7835714286rem;
-  color: rgb(65, 143, 101);
+  color: rgb(65, 143, 101) !important;
   font-weight: 300;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .home__more-slide-logo {
   width: 3.2857142857rem;
