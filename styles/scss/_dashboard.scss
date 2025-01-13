@@ -1467,6 +1467,26 @@
    pointer-events: none;
   }
  }
+ .dash-1000-binance {
+  position: relative;
+  &::before {
+   content: '';
+   position: absolute;
+   background: linear-gradient(270deg, #ddc081 22.48%, #5f976e 79.18%);
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   border-radius: rem(15px);
+   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+   -webkit-mask-composite: destination-out;
+   mask-composite: exclude;
+   padding: rem(2px);
+   pointer-events: none;
+  }
+ }
  .dash-level-1 {
   position: relative;
   &::before {
@@ -2293,11 +2313,8 @@
   display: grid;
 
   grid-template-columns:
-   minmax(0, rem(7px)) minmax(0, rem(28px)) minmax(0, rem(60px)) minmax(
-    0,
-    rem(61px)
-   )
-   minmax(0, rem(36px)) minmax(0, rem(77px));
+   rem(10px) rem(28px) rem(60px) rem(61px) rem(36px)
+   rem(77px);
   gap: rem(13px);
   align-items: center;
  }
@@ -2325,6 +2342,11 @@
   word-break: auto-phrase;
   max-width: rem(60px);
  }
+ &__line-history-col:nth-child(1) {
+  max-width: rem(10px);
+  justify-content: normal;
+  display: block;
+ }
  &__line-history-col {
   font-size: rem(10px);
   font-weight: 600;
@@ -2333,6 +2355,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: auto-phrase;
  }
  &__line-history-col.level-col {
   -moz-column-gap: rem(3px);
@@ -2340,6 +2366,11 @@
  }
  &__line-history-col-number {
   font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: auto-phrase;
+  max-width: rem(60px);
  }
  &__line-history-col:nth-child(5) {
   font-weight: 500;
@@ -2348,15 +2379,17 @@
   font-size: rem(6px);
   line-height: normal;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: auto-phrase;
  }
  &__line-history-deposit.no-deposit {
   padding: rem(2px) rem(5px);
+  width: rem(61px);
   &::before {
    content: '';
    position: absolute;
@@ -2381,6 +2414,7 @@
  }
  &__line-history-deposit.demo {
   padding: rem(2px) rem(5px);
+  width: rem(34px);
   &::before {
    content: '';
    position: absolute;
@@ -2405,6 +2439,7 @@
  }
  &__line-history-deposit.with-deposit {
   padding: rem(2px) rem(5px);
+  width: rem(42px);
 
   &::before {
    content: '';
