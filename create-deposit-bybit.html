@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dashboard</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-   href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+   href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
    rel="stylesheet"
   />
   <link rel="stylesheet" href="./styles/scss/style.css" />
@@ -23,7 +24,7 @@
  <body>
   <header class="header">
    <div class="header__wrapper">
-    <a href="index.html">
+    <a href="dashboard.html">
      <div class="header__col back">Назад</div>
     </a>
     <div class="header__center">
@@ -114,13 +115,13 @@
      <div class="dashboard__slider splide">
       <div class="dashboard__slider-container splide__track">
        <div class="dashboard__slider-wrapper splide__list">
-        <div class="dashboard__slide-item splide__slide active">
-         <a href="dashboard-staking.html">
+        <div class="dashboard__slide-item splide__slide">
+         <a href="create-deposit-staking.html">
           <p class="dashboard__slide-name">Staking</p>
          </a>
         </div>
         <div class="dashboard__slide-item splide__slide">
-         <a href="dashboard-kucoin.html">
+         <a href="create-deposit-kucoin.html">
           <svg
            width="87"
            height="20"
@@ -142,8 +143,8 @@
           </svg>
          </a>
         </div>
-        <div class="dashboard__slide-item splide__slide">
-         <a href="dashboard-bybit.html">
+        <div class="dashboard__slide-item splide__slide active">
+         <a href="create-deposit-bybit.html">
           <svg
            width="60"
            height="20"
@@ -161,7 +162,7 @@
          </a>
         </div>
         <div class="dashboard__slide-item splide__slide">
-         <a href="dashboard-okx.html">
+         <a href="create-deposit-okx.html">
           <svg
            width="60"
            height="18"
@@ -178,12 +179,7 @@
          </a>
         </div>
         <div class="dashboard__slide-item splide__slide">
-         <a href="dashboard.html">
-          <p class="dashboard__slide-name">Дашборд</p>
-         </a>
-        </div>
-        <div class="dashboard__slide-item splide__slide">
-         <a href="dashboard-binance.html">
+         <a href="create-deposit-binance.html">
           <svg
            width="54"
            height="44"
@@ -240,7 +236,7 @@
          </a>
         </div>
         <div class="dashboard__slide-item splide__slide">
-         <a href="dashboard-btc.html">
+         <a href="create-deposit-btc.html">
           <img
            src="./assets/icons/dashboard/btc.svg"
            alt=""
@@ -263,278 +259,190 @@
         <p class="dashboard__loading-text">Скоро в доступе</p>
        </div>
       </div>
-      <div class="dashboard__content-wrapper">
-       <div class="dashboard__deposits">
-        <div class="dashboard__card dash-1000">
-         <div class="dashboard__card-content">
-          <div class="dashboard__card-info">
-           <p class="dashboard__card-info-title">Общий депозит</p>
-           <div class="dashboard__card-wallet">
-            <img
-             src="./assets/icons/dashboard/wallet-logo.svg"
-             alt=""
-             class="dashboard__card-wallet-logo"
-            />
-            <p class="dashboard__card-wallet-name">USDT</p>
-           </div>
-           <p class="dashboard__card-amount">$ 888,888.88</p>
-          </div>
-         </div>
-        </div>
-        <div class="dashboard__card dash-1000">
-         <div class="dashboard__card-content">
-          <div class="dashboard__card-info">
-           <p class="dashboard__card-info-title">1/20 депозита</p>
-           <div class="dashboard__card-wallet">
-            <img
-             src="./assets/icons/dashboard/wallet-logo.svg"
-             alt=""
-             class="dashboard__card-wallet-logo"
-            />
-            <p class="dashboard__card-wallet-name">USDT</p>
-           </div>
-           <p class="dashboard__card-amount">$ 888,888.88</p>
-          </div>
-         </div>
-        </div>
-       </div>
-       <div class="dashboard__profit dash-1000 graph">
-        <div class="dashboard__profit-items graph">
-         <div class="dashboard__profit-item">
-          <div class="dashboard__profit-info">
-           <p class="dashboard__profit-info-name">Доход за сутки</p>
-           <p class="dashboard__profit-amount">$ 888,888.88</p>
-          </div>
-          <div class="dashboard__profit-result plus">+0,888%</div>
-         </div>
-         <img
-          src="./assets/img/dashboard/graph.svg"
-          alt=""
-          class="dashboard__profit-graph"
-         />
-         <div class="dashboard__profit-item">
-          <div class="dashboard__profit-info">
-           <p class="dashboard__profit-info-name">Доход за неделю</p>
-           <p class="dashboard__profit-amount">$ 888,888.88</p>
-          </div>
-          <div class="dashboard__profit-result minus">-0,888%</div>
-         </div>
-         <div class="dashboard__profit-item">
-          <div class="dashboard__profit-info">
-           <p class="dashboard__profit-info-name">Всего</p>
-           <p class="dashboard__profit-amount">$ 888,888.88</p>
-          </div>
-          <div class="dashboard__wallet">
-           <img
-            src="./assets/icons/dashboard/wallet-logo.svg"
-            alt=""
-            class="dashboard__wallet-logo"
-           />
-           <p class="dashboard__wallet-name">USDT</p>
-          </div>
-         </div>
-        </div>
-       </div>
-       <div class="dashboard__level-profit dash-1000">
-        <div class="dashboard__level-profit-info">
-         <p class="dashboard__level-profit-name">Уровень доходности</p>
-         <p class="dashboard__level-profit-level">Уровень 1</p>
-         <p class="dashboard__level-profit-value">5%</p>
-        </div>
+      <div class="dashboard__deposit-slider splide">
+       <div class="dashboard__arrows splide__arrows">
         <img
-         src="./assets/icons/dashboard/level-1.png"
+         src="./assets/icons/dashboard/arrow-left.svg"
          alt=""
-         class="dashboard__level-profit-logo"
+         class="splide__arrow splide__arrow--prev dashboard__progress-prev"
+        />
+        <img
+         src="./assets/icons/dashboard/arrow-right.svg"
+         alt=""
+         class="splide__arrow splide__arrow--next dashboard__progress-next"
         />
        </div>
-       <div class="dashboard__trades">
-        <div class="dashboard__trade-deposit dash-1000">
-         <p class="dashboard__trade-deposit-name">Торгуемый депозит</p>
-         <div class="dashboard__trade-wallet">
-          <img
-           src="./assets/icons/dashboard/wallet-logo.svg"
-           alt=""
-           class="dashboard__trade-wallet-logo"
-          />
-          <p class="dashboard__trade-wallet-name">USDT</p>
-         </div>
-         <p class="dashboard__trade-deposit-amount">$ 888,888.88</p>
-        </div>
-        <div class="dashboard__trade-items">
-         <div class="dashboard__trade-item dash-1000">
-          <p class="dashboard__trade-item-name">Количество сделок</p>
-          <p class="dashboard__trade-item-value">14</p>
-         </div>
-         <div class="dashboard__trade-item dash-1000">
-          <p class="dashboard__trade-item-name">Активные сделки</p>
-          <p class="dashboard__trade-item-value">3</p>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="dashboard__dropdown-items">
-       <div class="dashboard__dropdown">
-        <p class="dashboard__dropdown-name">Сделки Live</p>
+       <div class="dashboard__deposit-slider-container splide__track">
+        <div class="dashboard__deposit-slider-wrapper splide__list">
+         <div class="dashboard__deposit-slide-item level-1-btc splide__slide">
+          <div class="dashboard__deposit-slide-item-wrapper">
+           <div class="dashboard__deposit-slide-item-header">
+            <div class="dashboard__deposit-slide-title-wrapper">
+             <div class="dashboard__deposit-slide-sticker">Beta</div>
 
-        <div class="dashboard__dropdown-menu">
-         <div class="dashboard__trades-live">
-          <div class="dashboard__trades-live-container">
-           <div class="dashboard__trades-live-item">
-            <div class="dashboard__trade-pair">
-             <p class="dashboard__trade-pair-name">Торгуемая пара</p>
-             <div class="dashboard__trade-pair-wallet">
-              <img
-               src="./assets/icons/dashboard/d-icon.svg"
-               alt=""
-               class="dashboard__trade-pair-wallet-icon"
-              />
-              <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
-             </div>
+             <p class="dashboard__deposit-slide-title">Депозит</p>
             </div>
-            <div class="dashboard__trade-live-info plus">
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Цена покупки</p>
-              <p class="dashboard__trade-live-info-value">1.235</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Время покупки</p>
-              <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Цена продажи</p>
-              <p class="dashboard__trade-live-info-value">1.235</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Время продажи</p>
-              <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Спред</p>
-              <p class="dashboard__trade-live-info-value">3</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">USDT</p>
-              <p class="dashboard__trade-live-info-value">0.6090</p>
+            <p class="dashboard__deposit-slide-subtitle">
+             от 500 <span>USDT</span>
+            </p>
+            <div class="dashboard__deposit-slide-level">
+             <p class="dashboard__deposit-slide-level-title">От уровня</p>
+             <div class="dashboard__deposit-slide-level-wrapper">
+              <p class="dashboard__deposit-slide-level-number level-1">1</p>
+              <img
+               src="./assets/icons/dashboard/level-1.png"
+               alt=""
+               class="dashboard__deposit-slide-level-icon"
+              />
              </div>
             </div>
            </div>
-           <div class="dashboard__trades-live-item">
-            <div class="dashboard__trade-pair">
-             <p class="dashboard__trade-pair-name">Торгуемая пара</p>
-             <div class="dashboard__trade-pair-wallet">
-              <img
-               src="./assets/icons/dashboard/d-icon.svg"
-               alt=""
-               class="dashboard__trade-pair-wallet-icon"
-              />
-              <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
-             </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">Старт торговли</p>
+            <span class="dashboard__slide-item-info-text">моментально</span>
+           </div>
+           <div class="dashboard__slide-item-info">
+            <span class="dashboard__slide-item-info-text">Уровень 1</span>
+            <span class="dashboard__slide-item-info-text">20%</span>
+            <p class="dashboard__slide-item-info-text">
+             от среднесуточной доходности
+            </p>
+           </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">Срок депозита</p>
+            <span class="dashboard__slide-item-info-text">120 дней</span>
+           </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">Вывод</p>
+            <span class="dashboard__slide-item-info-text"
+             >каждый понедельник</span
+            >
+           </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">
+             Минимальная сумма вывода
+            </p>
+            <span class="dashboard__slide-item-info-text">20 USDT</span>
+           </div>
+           <a href="deposit-btc.html">
+            <button class="dashboard__slide-item-button">
+             Создать депозит
+            </button>
+           </a>
+          </div>
+         </div>
+         <div class="dashboard__deposit-slide-item level-2-btc splide__slide">
+          <div class="dashboard__deposit-slide-item-wrapper">
+           <div class="dashboard__deposit-slide-item-header">
+            <div class="dashboard__deposit-slide-title-wrapper">
+             <div class="dashboard__deposit-slide-sticker">Beta</div>
+
+             <p class="dashboard__deposit-slide-title">Депозит</p>
             </div>
-            <div class="dashboard__trade-live-info minus">
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Цена покупки</p>
-              <p class="dashboard__trade-live-info-value">1.235</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Время покупки</p>
-              <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Цена продажи</p>
-              <p class="dashboard__trade-live-info-value">1.235</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Время продажи</p>
-              <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Спред</p>
-              <p class="dashboard__trade-live-info-value">3</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">USDT</p>
-              <p class="dashboard__trade-live-info-value">-0.6090</p>
+            <p class="dashboard__deposit-slide-subtitle">
+             от 500 <span>USDT</span>
+            </p>
+            <div class="dashboard__deposit-slide-level">
+             <p class="dashboard__deposit-slide-level-title">От уровня</p>
+             <div class="dashboard__deposit-slide-level-wrapper">
+              <p class="dashboard__deposit-slide-level-number level-4">4</p>
+              <img
+               src="./assets/icons/dashboard/level-4.png"
+               alt=""
+               class="dashboard__deposit-slide-level-icon"
+              />
              </div>
             </div>
            </div>
-           <div class="dashboard__trades-live-item">
-            <div class="dashboard__trade-pair">
-             <p class="dashboard__trade-pair-name">Торгуемая пара</p>
-             <div class="dashboard__trade-pair-wallet">
-              <img
-               src="./assets/icons/dashboard/d-icon.svg"
-               alt=""
-               class="dashboard__trade-pair-wallet-icon"
-              />
-              <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
-             </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">Старт торговли</p>
+            <span class="dashboard__slide-item-info-text">моментально</span>
+           </div>
+           <div class="dashboard__slide-item-info">
+            <span class="dashboard__slide-item-info-text">Уровень 2</span>
+            <span class="dashboard__slide-item-info-text">25%</span>
+            <p class="dashboard__slide-item-info-text">
+             от среднесуточной доходности
+            </p>
+           </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">Срок депозита</p>
+            <span class="dashboard__slide-item-info-text">150 дней</span>
+           </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">Вывод</p>
+            <span class="dashboard__slide-item-info-text"
+             >каждый понедельник</span
+            >
+           </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">
+             Минимальная сумма вывода
+            </p>
+            <span class="dashboard__slide-item-info-text">20 USDT</span>
+           </div>
+           <a href="deposit-btc.html">
+            <button class="dashboard__slide-item-button">
+             Создать депозит
+            </button>
+           </a>
+          </div>
+         </div>
+         <div class="dashboard__deposit-slide-item level-3-btc splide__slide">
+          <div class="dashboard__deposit-slide-item-wrapper">
+           <div class="dashboard__deposit-slide-item-header">
+            <div class="dashboard__deposit-slide-title-wrapper">
+             <div class="dashboard__deposit-slide-sticker">Beta</div>
+
+             <p class="dashboard__deposit-slide-title">Депозит</p>
             </div>
-            <div class="dashboard__trade-live-info no-spread">
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Цена покупки</p>
-              <p class="dashboard__trade-live-info-value">1.235</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Время покупки</p>
-              <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Цена продажи</p>
-              <p class="dashboard__trade-live-info-value">1.235</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Время продажи</p>
-              <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Спред</p>
-              <p class="dashboard__trade-live-info-value">0</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">USDT</p>
-              <p class="dashboard__trade-live-info-value">0.6090</p>
+            <p class="dashboard__deposit-slide-subtitle">
+             от 500 <span>USDT</span>
+            </p>
+            <div class="dashboard__deposit-slide-level">
+             <p class="dashboard__deposit-slide-level-title">От уровня</p>
+             <div class="dashboard__deposit-slide-level-wrapper">
+              <p class="dashboard__deposit-slide-level-number level-6">6</p>
+              <img
+               src="./assets/icons/dashboard/level-6.png"
+               alt=""
+               class="dashboard__deposit-slide-level-icon"
+              />
              </div>
             </div>
            </div>
-           <div class="dashboard__trades-live-item">
-            <div class="dashboard__trade-pair">
-             <p class="dashboard__trade-pair-name">Торгуемая пара</p>
-             <div class="dashboard__trade-pair-wallet">
-              <img
-               src="./assets/icons/dashboard/d-icon.svg"
-               alt=""
-               class="dashboard__trade-pair-wallet-icon"
-              />
-              <p class="dashboard__trade-pair-wallet-value">1000SATS/USDT</p>
-             </div>
-            </div>
-            <div class="dashboard__trade-live-info empty">
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Цена покупки</p>
-              <p class="dashboard__trade-live-info-value">1.235</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Время покупки</p>
-              <p class="dashboard__trade-live-info-value">14:05 UTC</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Цена продажи</p>
-              <p class="dashboard__trade-live-info-value">-</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Время продажи</p>
-              <p class="dashboard__trade-live-info-value">-:-:- UTC</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">Спред</p>
-              <p class="dashboard__trade-live-info-value">-</p>
-             </div>
-             <div class="dashboard__trade-live-info-col">
-              <p class="dashboard__trade-live-info-name">USDT</p>
-              <p class="dashboard__trade-live-info-value">-</p>
-             </div>
-            </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">Старт торговли</p>
+            <span class="dashboard__slide-item-info-text">моментально</span>
            </div>
+           <div class="dashboard__slide-item-info">
+            <span class="dashboard__slide-item-info-text">Уровень 3</span>
+            <span class="dashboard__slide-item-info-text">30%</span>
+            <p class="dashboard__slide-item-info-text">
+             от среднесуточной доходности
+            </p>
+           </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">Срок депозита</p>
+            <span class="dashboard__slide-item-info-text">180 дней</span>
+           </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">Вывод</p>
+            <span class="dashboard__slide-item-info-text"
+             >каждый понедельник</span
+            >
+           </div>
+           <div class="dashboard__slide-item-info">
+            <p class="dashboard__slide-item-info-text">
+             Минимальная сумма вывода
+            </p>
+            <span class="dashboard__slide-item-info-text">20 USDT</span>
+           </div>
+           <a href="deposit-btc.html">
+            <button class="dashboard__slide-item-button">
+             Создать депозит
+            </button>
+           </a>
           </div>
          </div>
         </div>
@@ -548,8 +456,7 @@
   https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
   "></script>
   <script src="./js/slider/dashboard/dashslider.js"></script>
-  <script src="./js/dashboard/renew/renew.js"></script>
-  <script src="./js/dashboard/dropdown/dropdown.js"></script>
+  <script src="./js/slider/dashboard/deposit.js"></script>
   <script src="./js/header/header.js"></script>
  </body>
 </html>
